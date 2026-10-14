@@ -1,0 +1,65 @@
+RENCANA PENELITIAN DISERTASI (DRAFT PEMBIMBING 2) - versi Juli
+
+JUDUL RENCANA
+Kesiapan Kerja Mahasiswa Vokasi di Kawasan Timur Indonesia: Peran Literasi Digital, Dukungan Sosial, dan Pengalaman Magang
+
+RINGKASAN
+Pengangguran lulusan vokasi masih menjadi persoalan struktural. Rencana penelitian ini menguji bagaimana literasi digital, dukungan sosial, dan pengalaman magang membentuk kesiapan kerja mahasiswa vokasi. Pendekatan yang digunakan adalah mixed methods dengan fase kuantitatif dilanjutkan wawancara mendalam pada informan terpilih.
+
+BAGIAN I PENDAHULUAN
+
+Latar Belakang dan Urgensi
+Lulusan pendidikan vokasi menghadapi pasar kerja yang berubah cepat karena otomasi dan digitalisasi. Tingkat pengangguran terbuka lulusan vokasi tercatat 9,4 persen pada data terakhir. Penelitian terdahulu menunjukkan literasi digital berkorelasi dengan kesiapan kerja, tetapi sebagian besar dilakukan di perguruan tinggi di Pulau Jawa dan belum memasukkan pengalaman magang sebagai faktor penting dalam konteks Sulawesi Utara.
+
+Rumusan Masalah
+Masih rendahnya kesiapan kerja lulusan vokasi di Sulawesi Utara, sementara literasi digital, dukungan sosial, dan pengalaman magang belum diteliti secara terpadu dalam satu model.
+
+Pertanyaan Penelitian
+RQ1: Bagaimana pengaruh literasi digital terhadap kesiapan kerja mahasiswa vokasi?
+RQ2: Bagaimana pengaruh pengalaman magang terhadap kesiapan kerja mahasiswa vokasi?
+RQ3: Bagaimana mahasiswa memaknai pengalaman magang dalam membentuk kesiapan kerja?
+
+Kebaruan Penelitian
+Penelitian ini menawarkan kebaruan pada penggabungan tiga prediktor dalam satu model pada konteks Indonesia timur, serta menggunakan desain sequential explanatory mixed methods, berbeda dari penelitian sebelumnya yang umumnya kuantitatif tunggal.
+
+BAGIAN II KAJIAN TEORI DAN KERANGKA BERPIKIR
+
+Teori yang Digunakan
+Penelitian ini bertumpu pada Social Cognitive Career Theory (Lent, Brown, & Hackett, 1994) dan Teori Kesiapan Kerja (Caballero & Walker, 2010), serta menambahkan perspektif experiential learning dari Kolb (1984) untuk menjelaskan peran pengalaman magang.
+
+Kerangka Berpikir
+Model konseptual menempatkan literasi digital, dukungan sosial, dan pengalaman magang sebagai variabel independen, kesiapan kerja sebagai variabel dependen, serta motivasi belajar sebagai variabel mediasi. Diagram kerangka berpikir dilampirkan pada Lampiran 1.
+
+Hipotesis
+H1: Literasi digital berpengaruh positif terhadap kesiapan kerja.
+H2: Pengalaman magang berpengaruh positif terhadap kesiapan kerja.
+H3: Dukungan sosial berpengaruh positif terhadap kesiapan kerja.
+H4: Motivasi belajar memediasi pengaruh pengalaman magang terhadap kesiapan kerja.
+
+BAGIAN III METODE PENELITIAN
+
+Desain Penelitian
+Penelitian menggunakan sequential explanatory mixed methods. Fase pertama survei kuantitatif, fase kedua wawancara semi terstruktur dengan 18 informan yang dipilih secara purposive. Titik integrasi kedua fase berada pada tahap interpretasi hasil untuk menjelaskan temuan statistik.
+
+Populasi dan Sampel
+Populasi adalah mahasiswa vokasi semester akhir di lima politeknik di Sulawesi Utara. Sampel fase kuantitatif sebanyak 210 responden dengan teknik cluster sampling dan perhitungan ukuran sampel menggunakan rumus Slovin pada margin error 5 persen.
+
+Instrumen dan Analisis Data
+Instrumen terdiri atas kuesioner literasi digital 24 item, kuesioner dukungan sosial 18 item, kuesioner kesiapan kerja 20 item, dan kuesioner pengalaman magang 15 item. Reliabilitas diuji dengan Cronbach's alpha dan validitas konvergen melalui analisis faktor konfirmatori. Analisis data menggunakan Structural Equation Modeling berbasis Partial Least Squares dengan bantuan perangkat lunak SmartPLS, dilengkapi analisis tematik untuk data kualitatif.
+
+Etika dan Keterbatasan
+Penelitian mengajukan ethical clearance, menerapkan informed consent, serta menyimpan data pada server terenkripsi. Keterbatasan penelitian mencakup cakupan wilayah yang terbatas pada lima politeknik sehingga generalisasi perlu hati-hati, serta kemungkinan bias jawaban sosial pada kuesioner.
+
+Anggaran Penelitian
+Total anggaran yang diusulkan sebesar Rp 47.500.000 yang bersumber dari dana hibah internal kampus, mencakup biaya pengumpulan data, perangkat lunak analisis, dan publikasi.
+
+Jadwal Penelitian
+Penelitian direncanakan selama 12 bulan: 3 bulan persiapan dan perizinan, 4 bulan pengumpulan data kuantitatif dan kualitatif, 3 bulan analisis, dan 2 bulan penulisan serta publikasi.
+
+Rencana Luaran
+Luaran yang ditargetkan adalah dua artikel pada jurnal internasional bereputasi terindeks Scopus, satu buku ajar, dan satu laporan kebijakan bagi dinas pendidikan provinsi.
+
+DAFTAR PUSTAKA
+Caballero, C. L., & Walker, A. (2010). Work readiness in graduate recruitment and selection.
+Kolb, D. A. (1984). Experiential learning: Experience as the source of learning and development.
+Lent, R. W., Brown, S. D., & Hackett, G. (1994). Toward a unifying social cognitive theory of career and academic interest.

@@ -1,0 +1,50 @@
+PROPOSAL DISERTASI (DRAFT PEMBIMBING 1) - versi Maret
+
+JUDUL
+Pengaruh Literasi Digital dan Dukungan Sosial terhadap Kesiapan Kerja Mahasiswa Vokasi di Sulawesi Utara
+
+BAB 1 PENDAHULUAN
+
+1.1 Latar Belakang
+Transformasi industri menuntut lulusan pendidikan vokasi memiliki kesiapan kerja yang tinggi. Data BPS menunjukkan tingkat pengangguran terbuka lulusan vokasi masih berada pada kisaran 9,4 persen, lebih tinggi daripada lulusan jenjang akademik. Kesenjangan ini diduga berkaitan dengan rendahnya literasi digital dan lemahnya dukungan sosial di lingkungan kampus. Penelitian sebelumnya lebih banyak membahas kesiapan kerja dari sisi kompetensi teknis, sementara peran literasi digital dan dukungan sosial dalam konteks daerah berkembang di Indonesia masih jarang dikaji secara kuantitatif.
+
+1.2 Rumusan Masalah
+Rendahnya kesiapan kerja lulusan vokasi diduga dipengaruhi oleh tingkat literasi digital yang belum merata dan dukungan sosial yang belum optimal. Belum jelas seberapa besar kontribusi masing-masing faktor tersebut.
+
+1.3 Pertanyaan Penelitian
+RQ1: Bagaimana tingkat literasi digital mahasiswa vokasi?
+RQ2: Seberapa besar pengaruh literasi digital terhadap kesiapan kerja?
+RQ3: Seberapa besar pengaruh dukungan sosial terhadap kesiapan kerja?
+RQ4: Apakah dukungan sosial memoderasi hubungan literasi digital dan kesiapan kerja?
+
+1.4 Tujuan
+Tujuan umum penelitian ini adalah menganalisis pengaruh literasi digital dan dukungan sosial terhadap kesiapan kerja mahasiswa vokasi.
+
+BAB 2 KAJIAN PUSTAKA
+
+2.1 Landasan Teori
+Penelitian ini menggunakan Teori Kesiapan Kerja dari Caballero dan Walker serta Social Cognitive Career Theory (SCCT) dari Lent, Brown, dan Hackett. SCCT menjelaskan bahwa keyakinan diri dan dukungan lingkungan membentuk kesiapan individu memasuki dunia kerja. Literasi digital dipahami sebagai kemampuan teknis, kritis, dan etis dalam menggunakan teknologi informasi.
+
+2.2 Penelitian Terdahulu
+Beberapa studi di Jawa menemukan hubungan positif literasi digital dengan kesiapan kerja, namun studi tersebut belum mempertimbangkan variabel dukungan sosial sebagai moderator dan belum dilakukan pada konteks Indonesia timur.
+
+BAB 3 METODE PENELITIAN
+
+3.1 Desain dan Populasi
+Penelitian menggunakan pendekatan kuantitatif dengan desain survei eksplanatori. Populasi adalah mahasiswa vokasi semester akhir di Sulawesi Utara. Sampel diambil dengan teknik proportional random sampling sebanyak 320 responden.
+
+3.2 Instrumen dan Analisis
+Instrumen berupa kuesioner literasi digital dengan 24 item menggunakan skala Likert lima titik, kuesioner dukungan sosial dengan 18 item, dan kuesioner kesiapan kerja dengan 20 item. Validitas diuji dengan validitas isi ahli dan reliabilitas dengan Cronbach's alpha. Analisis data menggunakan analisis regresi berganda dan uji interaksi Moderated Regression Analysis pada taraf signifikansi 5 persen.
+
+3.3 Etika Penelitian
+Penelitian mengajukan izin kepada komite etik universitas, menggunakan informed consent, dan menjaga kerahasiaan data responden sesuai ketentuan pelindungan data pribadi.
+
+3.4 Jadwal Penelitian
+Penelitian direncanakan selama 8 bulan, dimulai dari pengajuan izin, uji instrumen, pengumpulan data, analisis, hingga penulisan disertasi.
+
+3.5 Luaran
+Luaran penelitian berupa satu artikel pada jurnal nasional terakreditasi dan satu prosiding konferensi nasional.
+
+DAFTAR PUSTAKA
+Caballero, C. L., & Walker, A. (2010). Work readiness in graduate recruitment and selection.
+Lent, R. W., Brown, S. D., & Hackett, G. (1994). Toward a unifying social cognitive theory of career and academic interest.
