@@ -134,12 +134,13 @@ def main() -> None:
     tujuan_zip = siapkan_zip(lokasi)
     if tujuan_zip:
         lokasi.insert(0, tujuan_zip)
-    terlihat: dict[Path, Path] = {}
+    terlihat: dict[str, Path] = {}
     for folder in lokasi:
         if not folder.exists():
             continue
         for pdf in sorted(folder.glob("*.pdf")):
-            terlihat.setdefault(pdf.resolve(), pdf)
+            # kunci berdasarkan nama berkas agar berkas yang sama di dua lokasi tidak dihitung dua kali
+            terlihat.setdefault(pdf.name, pdf)
 
     if not terlihat:
         print("Tidak ada berkas PDF yang ditemukan di lokasi berikut:")
