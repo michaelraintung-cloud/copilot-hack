@@ -354,3 +354,7 @@ proposal-merge/unggahan/
 proposal-merge/acuan/dari-zip/
 proposal-merge/acuan/teks/
 proposal-merge/hasil/
+
+# berkas yang ditarik dari Google Drive (jangan di-commit; berisi naskah sumber)
+/google_drive/
+proposal-merge/hasil-drive/
