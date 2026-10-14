@@ -28,6 +28,7 @@ from pathlib import Path
 from docx import Document
 from docx.enum.section import WD_SECTION
 from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_LINE_SPACING
+from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from docx.shared import Cm, Pt, RGBColor
 
@@ -128,7 +129,35 @@ def baris_pemisah_tabel(baris: str) -> bool:
     return bool(re.fullmatch(r"\|?[\s:|-]+\|?", baris.strip())) and "-" in baris
 
 
-def konversi(md: Path, docx: Path, judul: str | None, penulis: str | None) -> dict:
+def tambah_daftar_isi(doc) -> None:
+    """Sisipkan judul DAFTAR ISI + field TOC Word (diperbarui otomatis saat dibuka)."""
+    par = doc.add_paragraph()
+    par.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    run = par.add_run("DAFTAR ISI")
+    run.bold = True
+    run.font.size = UKURAN_JUDUL[1]
+    run.font.name = FONT
+
+    par = doc.add_paragraph()
+    fld = OxmlElement("w:fldSimple")
+    fld.set(qn("w:instr"), "TOC " + chr(92) + 'o "1-3" ' + chr(92) + "h " + chr(92) + "z " + chr(92) + "u")
+    isi = OxmlElement("w:r")
+    teks = OxmlElement("w:t")
+    teks.text = "Daftar isi akan muncul di sini. Di Word: klik kanan → Perbarui Bidang (Update Field)."
+    isi.append(teks)
+    fld.append(isi)
+    par._p.append(fld)
+
+    setelan = doc.settings.element
+    if setelan.find(qn("w:updateFields")) is None:
+        el = OxmlElement("w:updateFields")
+        el.set(qn("w:val"), "true")
+        setelan.append(el)
+
+    doc.add_page_break()
+
+
+def konversi(md: Path, docx: Path, judul: str | None, penulis: str | None, daftar_isi: bool = True) -> dict:
     doc = Document()
     atur_dokumen(doc)
 
@@ -146,7 +175,21 @@ def konversi(md: Path, docx: Path, judul: str | None, penulis: str | None) -> di
         run.font.size = UKURAN
         run.font.name = FONT
 
+    if daftar_isi:
+        tambah_daftar_isi(doc)
+
     baris_teks = md.read_text(encoding="utf-8").replace("\r\n", "\n").split("\n")
+
+    # lewati judul H1 pertama bila sama dengan judul halaman judul (hindari judul ganda)
+    if judul:
+        for n, b in enumerate(baris_teks):
+            if not b.strip():
+                continue
+            m0 = re.match(r"^#\s+(.*)$", b.strip())
+            if m0 and m0.group(1).strip().lower() == judul.strip().lower():
+                baris_teks[n] = ""
+            break
+
     i = 0
     statistik = {"paragraf": 0, "judul": 0, "tabel": 0, "daftar": 0}
     while i < len(baris_teks):
@@ -242,13 +285,15 @@ def main() -> None:
     ap.add_argument("--keluar", required=True, help="Berkas .docx hasil")
     ap.add_argument("--judul", help="Judul yang dicetak di awal dokumen")
     ap.add_argument("--penulis", help="Nama penulis di bawah judul")
+    ap.add_argument("--tanpa-daftar-isi", action="store_true",
+                    help="jangan sisipkan halaman daftar isi otomatis")
     args = ap.parse_args()
 
     masuk, keluar = Path(args.masuk), Path(args.keluar)
     if not masuk.exists():
         raise SystemExit(f"Berkas sumber tidak ditemukan: {masuk}")
     keluar.parent.mkdir(parents=True, exist_ok=True)
-    stat = konversi(masuk, keluar, args.judul, args.penulis)
+    stat = konversi(masuk, keluar, args.judul, args.penulis, not args.tanpa_daftar_isi)
     print(f"Konversi selesai: {keluar}")
     print(f"  {stat['judul']} judul · {stat['paragraf']} paragraf · {stat['tabel']} tabel · {stat['daftar']} item daftar")
     print(f"  Ukuran berkas: {keluar.stat().st_size:,} byte")

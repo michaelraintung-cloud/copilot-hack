@@ -63,3 +63,25 @@ python3 tools/md_ke_docx.py --masuk hasil/proposal-gabungan.md \
 - Tool ini alat bantu keputusan, bukan penilai kualitas akademik. Semua keputusan substantif tetap milik penulis dan pembimbing.
 - File asli tidak pernah diubah; script hanya membaca dan menulis keluaran ke folder `hasil/`.
 - Jangan letakkan data responden atau berkas rahasia di repositori publik ini.
+
+## Merakit naskah gabungan (pipeline dua langkah)
+
+Naskah gabungan final dihasilkan dari tiga berkas sumber (A = induk, B dan C = sumber
+transplantasi) dengan dua perintah berurutan:
+
+```bash
+python3 tools/rakit_proposal.py     # merakit naskah: struktur A + sisipan B/C + tabel + daftar pustaka
+python3 tools/rapikan_tabel.py      # merekonstruksi tabel A dari PDF, membuang tabel duplikat, menomori ulang
+python3 tools/md_ke_docx.py --masuk hasil/proposal-gabungan.md --keluar hasil/proposal-gabungan.docx \
+        --judul "..." --penulis "..."
+```
+
+Catatan penting:
+
+- `rakit_proposal.py` membaca teks bersih `/tmp/bersih-{A,B,C}.txt` (hasil `tools/tangkap_pdf.py`)
+  dan catatan `catatan-integrasi.md`, lalu menulis `hasil/proposal-gabungan.md`.
+- `rapikan_tabel.py` memerlukan `pymupdf` (`pip install --break-system-packages pymupdf`) dan
+  membaca PDF berkas A dari folder `../google_drive/`.
+- `md_ke_docx.py` menyisipkan halaman **Daftar Isi otomatis** (field TOC Word) dan menandai
+  dokumen agar Word memperbarui bidang saat dibuka. Gunakan `--tanpa-daftar-isi` bila tidak diinginkan.
+- Perapian hanya dijalankan sekali per regenerasi: urutannya selalu rakit → rapikan → konversi.
