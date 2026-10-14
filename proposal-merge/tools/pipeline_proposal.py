@@ -67,13 +67,73 @@ def ekstrak(pdf: Path, tujuan: Path) -> str:
     return teks
 
 
+def siapkan_zip(scan: list[Path]) -> Path | None:
+    """Bila pengguna mengunggah satu berkas .zip berisi PDF, ekstrak dan ratakan isinya."""
+    import zipfile
+
+    tujuan = ROOT / "acuan" / "dari-zip"
+    ketemu = False
+    for folder in scan:
+        if not folder.is_dir():
+            continue
+        for zpath in sorted(folder.glob("*.zip")):
+            tujuan.mkdir(parents=True, exist_ok=True)
+            with zipfile.ZipFile(zpath) as z:
+                for nama in z.namelist():
+                    if nama.lower().endswith(".pdf") and not nama.startswith("__MACOSX"):
+                        berkas = Path(nama).name          # ratakan struktur folder di dalam ZIP
+                        with z.open(nama) as sumber, (tujuan / berkas).open("wb") as keluar:
+                            keluar.write(sumber.read())
+                        print(f"  dari ZIP: {berkas}")
+                        ketemu = True
+    return tujuan if ketemu else None
+
+
+def tarik_dari_git(ref: str, tujuan: Path) -> Path:
+    """Ambil berkas PDF/ZIP dari sebuah ref git (mis. origin/main) ke folder kerja lokal."""
+    import tarfile
+    import tempfile
+
+    tujuan.mkdir(parents=True, exist_ok=True)
+    with tempfile.TemporaryFile() as tmp:
+        proses = subprocess.run(["git", "archive", ref], cwd=REPO, stdout=tmp, stderr=subprocess.PIPE)
+        if proses.returncode != 0:
+            raise SystemExit(f"Gagal mengambil '{ref}': {proses.stderr.decode(errors='replace').strip()}")
+        tmp.seek(0)
+        jumlah = 0
+        with tarfile.open(fileobj=tmp) as tar:
+            for anggota in tar.getmembers():
+                if not (anggota.isfile() and anggota.name.lower().endswith((".pdf", ".zip"))):
+                    continue
+                nama = Path(anggota.name).name              # ratakan struktur folder
+                sumber = tar.extractfile(anggota)
+                if sumber is None:
+                    continue
+                (tujuan / nama).write_bytes(sumber.read())
+                print(f"  dari {ref}: {nama}")
+                jumlah += 1
+        if not jumlah:
+            print(f"  (tidak ada berkas PDF/ZIP pada {ref})")
+    return tujuan
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description="Pipeline deteksi + analisis berkas proposal disertasi.")
     ap.add_argument("--folder", action="append", default=[], help="Folder tambahan untuk dipindai")
+    ap.add_argument("--dari-git", help="Ambil PDF/ZIP dari ref git, mis. origin/main")
     ap.add_argument("--out", default=str(ROOT / "hasil"), help="Folder keluaran")
     args = ap.parse_args()
 
     lokasi = [Path(f) for f in args.folder] + LOKASI_DEFAULT
+
+    if args.dari_git:
+        print(f"Mengambil berkas dari git: {args.dari_git}")
+        lokasi.insert(0, tarik_dari_git(args.dari_git, REPO / "unggahan"))
+        print()
+
+    tujuan_zip = siapkan_zip(lokasi)
+    if tujuan_zip:
+        lokasi.insert(0, tujuan_zip)
     terlihat: dict[Path, Path] = {}
     for folder in lokasi:
         if not folder.exists():
