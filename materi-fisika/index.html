@@ -1,7 +1,185 @@
 <!DOCTYPE html>
-<html lang="id"><head><meta charset="utf-8">
-<meta http-equiv="refresh" content="0; url=ringkasan-fisika-dasar.html">
-<title>Ringkasan Fisika Dasar I</title></head>
-<body style="font-family:Georgia,serif;padding:40px">
-<p>Membuka <a href="ringkasan-fisika-dasar.html">Ringkasan Fisika Dasar I</a>…</p>
-</body></html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unduh — Ringkasan Fisika Dasar I</title>
+<style>
+  :root{
+    --merah:#8b1a1a; --merah2:#a52a2a; --krem:#faf7f0;
+    --garis:#ddd5c7; --teks:#1c1c1c;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:#f2f0eb; color:var(--teks);
+    font-family:Georgia,"Times New Roman",serif; line-height:1.6;
+  }
+  header{
+    background:var(--merah); color:#fff; padding:38px 24px 34px;
+    text-align:center; border-bottom:6px solid #b8860b;
+  }
+  header .kicker{
+    font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
+    letter-spacing:2px; font-size:12px; text-transform:uppercase;
+    color:#f0d9b5; margin:0 0 8px;
+  }
+  header h1{
+    margin:0; font-size:30px; letter-spacing:.5px;
+    font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
+  }
+  header p{margin:10px auto 0; max-width:640px; color:#f6e7d0; font-style:italic; font-size:15px}
+  main{max-width:880px; margin:0 auto; padding:36px 22px 70px}
+  .lead{
+    background:#fff; border-left:5px solid var(--merah2);
+    padding:16px 20px; border-radius:0 6px 6px 0; margin-bottom:28px;
+    box-shadow:0 1px 3px rgba(0,0,0,.06);
+  }
+  .lead p{margin:0; font-size:15px}
+  .card{
+    background:#fff; border:1px solid var(--garis); border-radius:8px;
+    padding:22px 24px; margin-bottom:18px;
+    display:flex; gap:20px; align-items:center; flex-wrap:wrap;
+    box-shadow:0 1px 4px rgba(0,0,0,.05);
+  }
+  .ikon{
+    width:60px; height:72px; flex:0 0 60px; border-radius:6px;
+    display:flex; align-items:center; justify-content:center;
+    font-family:system-ui,sans-serif; font-weight:700; font-size:13px;
+    color:#fff; letter-spacing:.5px;
+  }
+  .docx{background:#2b579a}
+  .pdf{background:#b30b00}
+  .html{background:#8b1a1a}
+  .info{flex:1; min-width:220px}
+  .info h2{
+    margin:0 0 4px; font-size:17px; color:var(--merah);
+    font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
+  }
+  .info p{margin:0; font-size:14px; color:#4a4a4a}
+  .meta{
+    font-family:system-ui,sans-serif; font-size:12px; color:#777;
+    margin-top:8px; display:flex; gap:14px; flex-wrap:wrap;
+  }
+  .btn{
+    display:inline-block; background:var(--merah); color:#fff;
+    text-decoration:none; font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
+    font-size:14px; font-weight:600; padding:11px 22px; border-radius:5px;
+    border:1px solid #701414; white-space:nowrap;
+    transition:background .15s ease;
+  }
+  .btn:hover{background:#a52a2a}
+  .btn.alt{background:#fff; color:var(--merah); border:1px solid var(--merah)}
+  .btn.alt:hover{background:var(--krem)}
+  .utama{
+    background:var(--krem); border:2px solid #b8860b; border-radius:8px;
+    padding:24px; margin-bottom:26px;
+  }
+  .utama h2{
+    margin:0 0 6px; font-size:19px; color:var(--merah);
+    font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
+  }
+  .utama p{margin:0 0 16px; font-size:14.5px}
+  h3.seksi{
+    font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
+    font-size:13px; text-transform:uppercase; letter-spacing:1.4px;
+    color:#7a7266; margin:34px 0 12px; padding-bottom:8px;
+    border-bottom:1px solid var(--garis);
+  }
+  .catatan{
+    font-size:13px; color:#5a5a5a; background:#fff;
+    border:1px dashed var(--garis); border-radius:6px; padding:14px 18px;
+  }
+  .catatan b{color:var(--merah)}
+  footer{
+    text-align:center; font-size:12.5px; color:#8a8377;
+    padding:0 20px 40px;
+  }
+  code{
+    font-family:Consolas,monospace; font-size:12.5px; background:#efe9dd;
+    padding:1px 5px; border-radius:3px;
+  }
+  @media(max-width:560px){
+    header h1{font-size:23px}
+    .card{padding:18px}
+    .btn{width:100%; text-align:center}
+  }
+</style>
+</head>
+<body>
+<header>
+  <p class="kicker">Mata Kuliah BEK1EAB4</p>
+  <h1>Ringkasan Fisika Dasar I</h1>
+  <p>Energi Kinetik &amp; Usaha · Energi Potensial &amp; Kekekalan Energi ·
+     Pusat Massa, Momentum Linear &amp; Tumbukan</p>
+</header>
+
+<main>
+  <div class="lead">
+    <p>Semua berkas di halaman ini siap diunduh. Klik tombol
+      <b>Unduh</b> pada berkas yang diinginkan — dokumen akan tersimpan
+      di folder <i>Downloads</i> komputer Anda.</p>
+  </div>
+
+  <div class="utama">
+    <h2>Berkas utama — Microsoft Word (A4)</h2>
+    <p>Dokumen lengkap: ringkasan tiga bab + 58 soal latihan beserta pembahasan,
+       siap cetak pada kertas A4.</p>
+    <a class="btn" href="Ringkasan-Fisika-Dasar-I.docx" download>Unduh Word (.docx)</a>
+    <a class="btn alt" href="Ringkasan-Fisika-Dasar-I.docx" target="_blank"
+       rel="noopener">Buka pratinjau</a>
+  </div>
+
+  <h3 class="seksi">Berkas lain</h3>
+
+  <div class="card">
+    <div class="ikon docx">DOCX</div>
+    <div class="info">
+      <h2>Ringkasan-Fisika-Dasar-I.docx</h2>
+      <p>Versi Microsoft Word, ukuran kertas A4, daftar isi otomatis,
+         header–footer bernomor halaman.</p>
+      <div class="meta"><span>± 115 KB</span><span>Word 2010 ke atas</span><span>A4</span></div>
+    </div>
+    <a class="btn" href="Ringkasan-Fisika-Dasar-I.docx" download>Unduh</a>
+  </div>
+
+  <div class="card">
+    <div class="ikon pdf">PDF</div>
+    <div class="info">
+      <h2>Ringkasan-Fisika-Dasar-Energi-dan-Momentum.pdf</h2>
+      <p>Versi PDF (74 halaman) dengan tata letak majalah — cocok untuk dibaca
+         di ponsel atau dibagikan tanpa perlu Word.</p>
+      <div class="meta"><span>± 321 KB</span><span>74 halaman</span><span>PDF</span></div>
+    </div>
+    <a class="btn" href="Ringkasan-Fisika-Dasar-Energi-dan-Momentum.pdf" download>Unduh</a>
+  </div>
+
+  <div class="card">
+    <div class="ikon html">HTML</div>
+    <div class="info">
+      <h2>ringkasan-fisika-dasar.html</h2>
+      <p>Versi web interaktif dengan menu navigasi di sisi kiri; dapat dibuka
+         langsung di browser mana pun.</p>
+      <div class="meta"><span>± 204 KB</span><span>1 berkas mandiri</span></div>
+    </div>
+    <a class="btn" href="ringkasan-fisika-dasar.html" target="_blank" rel="noopener">Buka</a>
+  </div>
+
+  <h3 class="seksi">Catatan penggunaan</h3>
+  <div class="catatan">
+    <p style="margin:0 0 8px"><b>Daftar isi.</b> Saat dokumen Word pertama kali dibuka,
+      Word akan memperbarui daftar isi otomatis. Bila nomor halaman belum tampil,
+      klik kanan di dalam daftar isi → <i>Update Field</i> → <i>Update entire table</i>.</p>
+    <p style="margin:0 0 8px"><b>Nama dosen.</b> Pada halaman judul masih berupa
+      titik-titik; silakan diganti dengan nama dan gelar Anda.</p>
+    <p style="margin:0"><b>Lokasi berkas di repositori.</b>
+      <code>materi-fisika/Ringkasan-Fisika-Dasar-I.docx</code></p>
+  </div>
+</main>
+
+<footer>
+  Disusun dari tiga berkas kuliah Fisika Dasar I — Kinetic Energy and Work;
+  Potential Energy and Conservation of Energy; Center of Mass, Linear Momentum
+  and Collision.
+</footer>
+</body>
+</html>
