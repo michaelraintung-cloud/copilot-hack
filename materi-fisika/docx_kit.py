@@ -454,18 +454,19 @@ def soal_teks(doc, text):
     return par
 
 
-def syarat(doc, text):
+def syarat(doc, text, prefix="Syarat pemakaian: "):
     par = doc.add_paragraph()
     pf = par.paragraph_format
     pf.left_indent = Cm(0.12)
     pf.space_before = Pt(2)
     pf.space_after = Pt(6)
     pf.line_spacing = 1.08
-    r = par.add_run("Syarat pemakaian: ")
-    r.bold = True
-    r.italic = True
-    r.font.size = Pt(9)
-    r.font.color.rgb = ABU
+    if prefix:
+        r = par.add_run(prefix)
+        r.bold = True
+        r.italic = True
+        r.font.size = Pt(9)
+        r.font.color.rgb = ABU
     rich(par, text, size=9, italic=True, color=ABU)
     return par
 
