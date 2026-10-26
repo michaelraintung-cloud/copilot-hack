@@ -1,0 +1,221 @@
+LAPORAN ANALISIS STUDI KASUS
+CASE 1: GUDANG YANG MAKIN SIBUK,
+TETAPI MAKIN KACAU
+Disusun untuk memenuhi tugas mata kuliah Manajemen Industri
+Nama: .................................................................
+NIM: ....................................................................
+Kelas: ..................................................................
+Dosen pengampu: ....................................................
+Program Studi: ......................................................
+Fakultas/Institusi: ..................................................
+2026
+
+RINGKASAN
+
+Perusahaan distribusi pada Case 1 mengalami kenaikan volume dari rata-rata 1.200 menjadi 2.000 pesanan per hari, sementara daftar picking masih dicetak dan perubahan lokasi barang tidak selalu dicatat. Akibatnya, picker mencari barang lebih lama, catatan stok dapat berbeda dari kondisi fisik, dan produk yang mirip berisiko tertukar.
+Dengan asumsi tingkat kesalahan 4% berlaku pada seluruh 600.000 pesanan tahunan dan setiap kesalahan menimbulkan biaya koreksi Rp25.000, estimasi biaya koreksi langsung adalah Rp600 juta per tahun. Angka ini bukan keseluruhan kerugian perusahaan. Data kasus belum cukup untuk menghitung nilai kerugian akibat selisih stok, keterlambatan, pembatalan, retur, atau dampak reputasi.
+Tiga alternatif dibandingkan: standardisasi proses manual; standardisasi proses dengan pilot barcode; dan WMS terintegrasi. Rekomendasi awal adalah membenahi proses dan master data, kemudian menguji barcode secara bertahap. Perluasan hanya dilakukan setelah hasil operasional dan biaya aktual dievaluasi. Rencana 90 hari, mitigasi risiko, dan KPI disusun untuk menjaga operasi tetap berjalan selama perubahan.
+Kata kunci: pergudangan, picking, akurasi persediaan, barcode, WMS.
+
+BAB I. PENDAHULUAN
+
+
+1.1 LATAR BELAKANG
+
+Gudang menghubungkan persediaan fisik dengan pemenuhan janji layanan kepada pelanggan. Kinerja picking dipengaruhi ketepatan lokasi, tata letak, metode kerja, dan mutu informasi persediaan (De Koster, Le-Duc, & Roodbergen, 2007; Frazelle, 2016). Pada kasus ini, pertumbuhan pesanan tidak diikuti pengendalian lokasi dan transaksi yang memadai. Karena itu, keputusan tidak cukup didasarkan pada penambahan picker atau pembelian teknologi; proses dan informasi perlu diperbaiki secara bersamaan.
+
+1.2 IDENTIFIKASI MASALAH
+
+- Lokasi barang berubah saat penataan ulang, tetapi perubahan tidak selalu dicatat.
+- Catatan stok dapat menunjukkan barang tersedia meskipun barang telah diambil atau tidak ditemukan.
+- Picker masih menggunakan daftar cetak dan mengandalkan ingatan atau bantuan rekan untuk mencari barang.
+- Produk dengan bentuk atau kemasan mirip dapat tertukar karena verifikasi akhir mengandalkan pemeriksaan visual.
+- Volume pesanan meningkat, sehingga kelemahan proses memperbesar risiko keterlambatan, pembatalan, dan komplain.
+
+1.3 RUMUSAN MASALAH
+
+- Apa masalah utama dan akar penyebab memburuknya kinerja gudang?
+- Berapa dampak ekonomi langsung yang dapat dihitung dari data kasus?
+- Alternatif perbaikan apa yang layak diprioritaskan dengan batas investasi Rp300 juta dan tanpa menghentikan operasi?
+- Bagaimana implementasi, risiko, dan keberhasilan solusi sebaiknya diukur?
+
+1.4 TUJUAN ANALISIS
+
+Mendiagnosis masalah operasional gudang, menghitung biaya koreksi langsung berdasarkan data yang tersedia, membandingkan alternatif secara transparan, serta menyusun rekomendasi, rencana implementasi 90 hari, mitigasi risiko, dan KPI.
+
+1.5 RUANG LINGKUP DAN BATASAN
+
+Analisis mencakup penyimpanan, relokasi, pengendalian persediaan, picking, dan verifikasi pesanan. Data tentang jumlah SKU, jumlah item per pesanan, waktu proses, frekuensi keterlambatan, rincian biaya retur, harga sistem, dan biaya tenaga kerja tidak tersedia. Karena itu, laporan tidak menyimpulkan kebutuhan tambahan picker dan belum dapat memastikan kelayakan finansial solusi. Target KPI dan skor alternatif adalah usulan awal, bukan hasil implementasi.
+
+BAB II. LANDASAN TEORI DAN FAKTA KASUS
+
+
+2.1 LANDASAN TEORI
+
+Order picking adalah aktivitas mengambil barang untuk memenuhi pesanan. Ketepatan lokasi, pengelompokan pesanan, tata letak, dan koordinasi kerja memengaruhi produktivitas; jumlah tenaga kerja saja tidak cukup untuk menjelaskan kinerja picking (De Koster et al., 2007; Frazelle, 2016).
+Akurasi catatan persediaan penting agar sistem mencerminkan kuantitas fisik. Ketidakakuratan dapat menimbulkan pencarian sia-sia, stockout semu, dan keputusan pemenuhan yang keliru (DeHoratius & Raman, 2008). Cycle counting dapat membantu menemukan selisih, tetapi perlu disertai pengendalian transaksi agar kesalahan tidak terus berulang (Destro et al., 2023).
+Barcode dapat memvalidasi identitas SKU dan lokasi pada titik transaksi. WMS dapat mengelola lokasi, tugas picking, replenishment, dan integrasi. Namun, manfaatnya bergantung pada mutu master data, desain proses, disiplin pemindaian, serta kesiapan pengguna; teknologi tidak menggantikan pengendalian proses (Zhen & Li, 2022).
+
+2.2 FAKTA DAN DATA KASUS
+
+Tabel 1. Fakta kuantitatif utama dalam Case 1
+Parameter | Data kasus | Makna / batasan
+Pesanan per hari | 2.000; sebelumnya 1.200 | Peningkatan sekitar 66,7%.
+Jumlah picker | 20 orang | Tidak cukup untuk menilai kapasitas tanpa data jam kerja, item/order, dan waktu proses.
+Kesalahan picking | 4% pesanan | Sekitar 80 pesanan per hari pada volume saat ini.
+Biaya koreksi | Rp25.000 per kesalahan | Komponen biaya dan proporsi yang dapat dihindari belum dirinci.
+Catatan stok tidak sesuai | 8% SKU | Metode pemeriksaan, jumlah unit, dan nilai persediaan terdampak tidak diberikan.
+Hari operasi | 300 hari/tahun | Dipakai untuk estimasi tahunan.
+Batas investasi | Rp300 juta | Belum ada penawaran atau biaya operasional solusi.
+
+
+2.3 KERANGKA PROSES OPERASIONAL SAAT INI
+
+Gambar 1. Alur operasional dan titik kendali yang perlu diperbaiki
+Barang diterima dan disimpan → lokasi dapat berubah saat penataan ulang → perubahan lokasi tidak selalu dicatat → pesanan dicetak → picker mencari dan mengambil barang → packing memeriksa secara visual → kesalahan/kekurangan diketahui → koreksi, keterlambatan, pembatalan, atau komplain.
+Titik kendali utama adalah pencatatan saat relokasi, pembaruan stok saat picking, dan verifikasi SKU sebelum pengemasan. Diagram ini menyederhanakan proses berdasarkan uraian kasus; urutan rinci penerimaan dan put-away perlu dikonfirmasi saat pemetaan lapangan.
+
+2.4 DAMPAK PERMASALAHAN
+
+Dampak operasional mencakup waktu pencarian, pekerjaan ulang, dan kapasitas picking/packing yang terpakai untuk memperbaiki kesalahan. Dampak layanan mencakup keterlambatan, pembatalan, dan komplain. Dampak finansial langsung yang bisa dihitung dari data yang tersedia adalah biaya koreksi picking; nilai kerugian lain memerlukan data tambahan.
+
+BAB III. ANALISIS MASALAH
+
+
+3.1 PENENTUAN MASALAH UTAMA
+
+Masalah utama adalah informasi lokasi dan status persediaan yang tidak selalu sesuai dengan kondisi fisik, disertai kontrol picking dan verifikasi yang lemah. Masalah tersebut mencakup metode kerja, pengelolaan stok, tata letak, dan sistem informasi. Kekurangan tenaga kerja belum dapat ditetapkan sebagai akar masalah: jumlah picker diketahui, tetapi beban kerja per shift, jam produktif, kompleksitas pesanan, dan waktu picking belum tersedia.
+
+3.2 ANALISIS AKAR PENYEBAB
+
+Tabel 2. Akar penyebab, bukti kasus, dan implikasi
+Dimensi | Bukti dalam kasus | Implikasi
+Metode kerja | Pemindahan barang tidak selalu diikuti pembaruan catatan; picking menggunakan daftar cetak. | Transaksi tidak dikendalikan secara konsisten dan pencarian bergantung pada informasi lama.
+Persediaan | Pengambilan dapat belum tercatat; 8% SKU dilaporkan memiliki catatan stok tidak sesuai. | Sistem dapat menunjukkan stok tersedia ketika barang tidak ditemukan.
+Tata letak | Lokasi diubah untuk mengakomodasi barang baru. | Pencarian meningkat; optimalitas layout belum dapat dinilai.
+Teknologi/informasi | Daftar cetak dan pencatatan yang tidak selalu mutakhir tidak memvalidasi lokasi/SKU. | Risiko salah SKU atau lokasi tidak dicegah pada saat transaksi.
+Tenaga kerja | Data beban per shift dan waktu proses tidak tersedia. | Kebutuhan menambah picker masih berupa hipotesis yang perlu diuji.
+
+
+3.3 KEBUTUHAN PERBAIKAN
+
+- Menetapkan kode lokasi unik dan aturan slotting; setiap relokasi harus tercatat saat terjadi.
+- Mewajibkan pembaruan transaksi penerimaan, put-away, relokasi, picking, packing, dan koreksi.
+- Membersihkan master SKU dan memvalidasi barcode, deskripsi, satuan, serta lokasi.
+- Memisahkan SKU yang mirip atau menambah verifikasi barcode pada picking/packing.
+- Menjalankan cycle count berbasis risiko, menginvestigasi selisih, dan mengatur otorisasi koreksi.
+- Mengukur waktu proses dan utilisasi per shift sebelum memutuskan penambahan picker.
+
+3.4 ASUMSI DAN DATA TAMBAHAN YANG DIPERLUKAN
+
+Estimasi biaya memakai 2.000 pesanan per hari selama 300 hari, tingkat kesalahan 4% per pesanan, dan biaya koreksi Rp25.000 per kejadian. Diasumsikan setiap kesalahan yang dihitung dikenai biaya tersebut. Tidak diasumsikan seluruh biaya dapat dihilangkan setelah solusi diterapkan.
+- Definisi dan catatan kesalahan per order serta jenisnya (salah SKU, kuantitas, atau barang tidak ditemukan).
+- Waktu picking/packing, item per pesanan, jarak tempuh, beban kerja, dan utilisasi per shift.
+- Metode pemeriksaan untuk angka 8% SKU, termasuk ukuran sampel, periode, dan apakah yang salah adalah saldo, lokasi, atau keduanya.
+- Jumlah pesanan terlambat/dibatalkan, retur, pengiriman ulang, dan biaya koreksi terperinci.
+- Jumlah SKU, peta gudang, kualitas master data, kebutuhan integrasi, serta penawaran perangkat, lisensi, implementasi, dukungan, dan pelatihan.
+
+BAB IV. HASIL DAN PEMBAHASAN
+
+
+4.1 ALTERNATIF SOLUSI
+
+Alternatif A — Standardisasi proses tanpa investasi teknologi besar. Membakukan kode dan label lokasi, SOP relokasi/transaksi, cycle count, slotting, dan checklist verifikasi. Cepat dimulai dan relatif murah, tetapi masih bergantung pada kepatuhan serta ketepatan input manual.
+Alternatif B — Standardisasi proses ditambah barcode dan pencatatan digital sederhana. Menerapkan perbaikan proses Alternatif A dan pemindaian SKU/lokasi pada penerimaan, put-away, relokasi, picking, dan packing. Dimulai melalui pilot area terbatas; perlu prosedur darurat dan rekonsiliasi jika sistem atau jaringan terganggu.
+Alternatif C — WMS terintegrasi. Mengelola lokasi, saldo, tugas, replenishment, picking, serta integrasi kanal penjualan/sistem perusahaan. Berpotensi memberi kontrol dan skalabilitas lebih luas, tetapi memerlukan master data bersih, desain proses, uji integrasi, pelatihan, dukungan, dan biaya yang belum diketahui.
+
+4.2 KRITERIA DAN PERBANDINGAN ALTERNATIF
+
+Skala 1–5: 1 = kurang sesuai, 5 = sangat sesuai. Bobot: dampak akurasi/kontrol 35%; kesinambungan dan kemudahan implementasi 20%; keterjangkauan biaya 20%; skalabilitas 15%; kesiapan/adopsi pengguna 10%. Rumus: skor akhir = Σ(bobot × skor) ÷ 100. Penilaian biaya dan kesiapan bersifat kualitatif karena harga dan kondisi sistem belum tersedia.
+Tabel 3. Matriks penilaian awal alternatif
+Alternatif | Akurasi / 35% | Implementasi / 20% | Biaya / 20% | Skala / 15% | Adopsi / 10% | Skor akhir
+A. Proses manual terstandardisasi | 3 | 4 | 5 | 2 | 4 | 3,55/5
+B. Proses + barcode bertahap | 4 | 4 | 4 | 4 | 3 | 3,90/5
+C. WMS terintegrasi | 5 | 2 | 2 | 5 | 2 | 3,50/5
+
+Skor bersifat penyaringan awal, bukan hasil uji atau bukti bahwa biaya solusi tertentu berada di bawah Rp300 juta. Alternatif B dinilai paling seimbang karena menggabungkan kontrol proses dengan validasi transaksi dan dapat diuji terbatas. Skor perlu diperbarui setelah survei gudang, uji pilot, masukan pengguna, dan penawaran biaya lengkap.
+
+4.3 ANALISIS DAMPAK EKONOMI YANG DAPAT DIHITUNG
+
+Tabel 4. Estimasi biaya koreksi langsung dan skenario ilustratif
+Perhitungan | Rumus | Hasil
+Pesanan per tahun | 2.000 × 300 | 600.000 pesanan
+Kesalahan saat ini per hari | 2.000 × 4% | 80 pesanan
+Kesalahan saat ini per tahun | 600.000 × 4% | 24.000 kejadian
+Biaya koreksi langsung per tahun | 24.000 × Rp25.000 | Rp600.000.000
+Skenario tingkat kesalahan 2% | (4% − 2%) × 600.000 × Rp25.000 | Rp300.000.000 potensi biaya yang terhindari secara bruto
+Skenario tingkat kesalahan 1% | (4% − 1%) × 600.000 × Rp25.000 | Rp450.000.000 potensi biaya yang terhindari secara bruto
+
+Dua skenario terakhir hanya ilustrasi sensitivitas: mengasumsikan jumlah kejadian turun sebanding dengan tingkat kesalahan dan biaya Rp25.000 benar-benar dapat dihindari untuk setiap kesalahan yang dicegah. Angka tersebut bukan janji penghematan. Case 1 tidak memberikan harga solusi atau biaya operasionalnya; karena itu, biaya koreksi dapat dihitung, tetapi kelayakan finansial solusi belum dapat dipastikan. Keputusan investasi memerlukan penawaran dan rincian biaya sepanjang umur penggunaan sistem.
+
+4.4 REKOMENDASI
+
+Pilih Alternatif B secara bertahap: bereskan master data dan SOP terlebih dahulu, kemudian lakukan pilot barcode pada zona/SKU terpilih. Perluasan hanya dilakukan bila data pilot menunjukkan perbaikan akurasi, layanan tidak menurun secara material, pengguna menjalankan pemindaian, dan biaya aktual disetujui dalam batas investasi. WMS terintegrasi dapat dipertimbangkan kemudian jika pilot menunjukkan kebutuhan orkestrasi dan integrasi yang lebih luas.
+
+BAB V. RENCANA IMPLEMENTASI, RISIKO, DAN KPI
+
+
+5.1 TAHAPAN IMPLEMENTASI 90 HARI
+
+Tabel 5. Rencana pelaksanaan dan penanggung jawab
+Periode | Kegiatan dan keluaran | Penanggung jawab
+Hari 1–15: Diagnosis | Petakan proses/lokasi; ukur baseline kesalahan, waktu picking, stok/lokasi dan layanan; audit sampel; kumpulkan kebutuhan dan pilih area pilot. | Manajer gudang, inventory control, analis proses, IT
+Hari 16–30: Standardisasi | Tetapkan kode lokasi, SOP relokasi/transaksi/koreksi, standar master SKU, cycle count, pemilik proses dan prosedur gangguan. | Manajer gudang, inventory control, supervisor, IT
+Hari 31–60: Pilot | Labeli area pilot; konfigurasi aplikasi/perangkat; latih picker dan packer; jalankan bertahap; pantau scan, akurasi, waktu, dan kendala. | IT, supervisor pilot, vendor bila ada, perwakilan picker/packer
+Hari 61–75: Stabilisasi | Perbaiki master data/layout/prosedur; uji fallback, pemulihan, rekonsiliasi, hak akses, dan biaya aktual. | Manajer gudang, IT, inventory control, keamanan TI
+Hari 76–90: Evaluasi | Bandingkan dengan baseline; nilai mutu layanan, manfaat operasional, biaya, dan kesiapan; putuskan perluasan, perbaikan, atau penghentian pilot. | Direktur operasional, keuangan, manajer gudang, IT
+
+Operasi tidak perlu dihentikan: penerapan dilakukan per zona/kelompok SKU. Sebelum pilot, tetapkan kriteria penghentian sementara jika akurasi atau layanan memburuk. Siapkan pencatatan fallback bernomor dan rekonsiliasi transaksi setelah gangguan.
+
+5.2 SUMBER DAYA DAN TANGGUNG JAWAB
+
+Diperlukan sponsor operasional, manajer gudang, supervisor, inventory control, perwakilan picker/packer, IT, keuangan, dan keamanan TI. Manajer gudang memiliki SOP dan kinerja harian; inventory control mengelola master data, cycle count, dan investigasi selisih; IT mengelola perangkat, konfigurasi, integrasi, akses, backup, dan dukungan; keuangan memvalidasi biaya; supervisor melatih dan memantau kepatuhan; picker/packer menjalankan proses serta melaporkan ketidaksesuaian.
+
+5.3 RISIKO DAN MITIGASI
+
+Tabel 6. Risiko utama dan tindakan mitigasi
+Kategori/risiko | Dampak | Mitigasi
+Operasional: pilot memperlambat picking atau perangkat/jaringan gagal. | Antrean kerja dan keterlambatan pesanan. | Pilot bertahap, uji beban, perangkat cadangan sesuai kebutuhan, fallback bernomor, rekonsiliasi segera.
+Teknologi/data: barcode/master salah atau transaksi hilang/ganda. | Saldo dan lokasi makin tidak akurat. | Validasi master, uji tiap alur, log transaksi, pencadangan, rekonsiliasi, kontrol versi label.
+Sosial: pengguna melewati pemindaian atau merasa dipantau untuk dihukum. | Kepatuhan rendah dan resistensi. | Libatkan staf dalam pilot, jelaskan tujuan, berikan pelatihan praktik dan saluran umpan balik; gunakan indikator secara adil.
+Keamanan: akses tidak sah atau gangguan sistem. | Data pesanan/persediaan terekspos atau operasi terganggu. | Akun individual, hak akses sesuai tugas, pencatatan akses, pembaruan, backup, dan prosedur respons insiden.
+Finansial: biaya aktual melampaui batas atau manfaat operasional tak tercapai. | Investasi tidak sesuai kemampuan atau kebutuhan. | Minta rincian biaya lengkap, batasi pilot, tetapkan gerbang keputusan dan kriteria berhenti/perluasan.
+
+
+5.4 INDIKATOR KEBERHASILAN (KPI)
+
+Tabel 7. Definisi, baseline, target usulan, dan frekuensi KPI
+KPI dan definisi | Baseline | Target/frekuensi
+Tingkat kesalahan picking = pesanan dengan SKU/kuantitas salah ÷ pesanan diproses. | 4% menurut kasus; validasi definisi dan periode. | Usulan ≤1% pada akhir pilot; pantau harian dan mingguan.
+Akurasi catatan stok = SKU yang kuantitas fisiknya cocok dengan sistem ÷ SKU yang dihitung. | Kasus menyebut 8% SKU catatannya tidak sesuai; metode dan cakupan perlu diverifikasi. | Usulan ≥98% pada sampel pilot; cycle count mingguan.
+Akurasi lokasi = SKU yang ditemukan di lokasi tercatat ÷ SKU yang diperiksa. | Belum tersedia; ukur pada baseline. | Target ditetapkan setelah baseline; pantau mingguan.
+Waktu picking = waktu dari tugas diterima hingga diserahkan ke packing; laporkan median dan persentil ke-90. | Belum tersedia; ukur hari 1–15. | Usulan turun ≥15% dari baseline tanpa mengurangi akurasi; mingguan.
+Kepatuhan scan = transaksi wajib yang dipindai ÷ seluruh transaksi wajib. | Belum tersedia. | Usulan ≥98% selama pilot; harian.
+Pesanan lengkap dan tepat waktu = pesanan lengkap tepat waktu ÷ pesanan diproses. | Belum tersedia. | Tidak lebih rendah dari baseline; tetapkan target numerik setelah pengukuran.
+Biaya koreksi aktual = biaya koreksi picking yang terverifikasi. | Estimasi kasus Rp600 juta/tahun; belum merupakan audit biaya aktual. | Menurun terhadap baseline dengan metode hitung konsisten; bulanan.
+
+Target KPI adalah target usulan yang perlu disahkan setelah baseline tervalidasi. Untuk membandingkan kinerja, gunakan definisi dan cakupan pesanan yang konsisten; perubahan volume atau komposisi pesanan harus dicatat atau dinormalisasi.
+
+BAB VI. KESIMPULAN DAN SARAN
+
+
+6.1 KESIMPULAN
+
+Kinerja gudang memburuk terutama karena lokasi dan status stok tidak selalu mencerminkan kondisi fisik, sementara picking dan verifikasi masih bergantung pada daftar cetak dan pemeriksaan visual. Kenaikan pesanan sekitar 66,7% memperbesar dampak kelemahan proses. Data belum membuktikan bahwa jumlah picker merupakan akar masalah. Berdasarkan asumsi yang dinyatakan, biaya koreksi langsung kesalahan picking diperkirakan Rp600 juta per tahun; nilai tersebut belum mencakup seluruh dampak ekonomi.
+Dari tiga alternatif, standardisasi proses dengan pilot barcode memperoleh skor awal tertinggi, 3,90/5. Rekomendasi ini merupakan pilihan untuk diuji, bukan keputusan investasi final. Perluasan sistem memerlukan validasi hasil pilot, kesiapan data dan pengguna, serta rincian biaya aktual.
+
+6.2 SARAN
+
+- Validasi baseline dan rincian biaya koreksi sebelum memulai pilot.
+- Benahi SOP, master data, aturan lokasi, dan tanggung jawab transaksi sebelum mengandalkan teknologi.
+- Uji barcode bertahap dengan prosedur fallback, kriteria berhenti, serta KPI yang disepakati.
+- Gunakan data waktu picking, kompleksitas pesanan, dan utilisasi untuk menentukan apakah penambahan picker diperlukan.
+- Kumpulkan penawaran dan biaya implementasi, lisensi, integrasi, pelatihan, dukungan, dan pemeliharaan sebelum memutuskan perluasan atau WMS.
+
+DAFTAR PUSTAKA
+
+DeHoratius, N., & Raman, A. (2008). Inventory record inaccuracy: An empirical analysis. Management Science, 54(4), 627–641. https://doi.org/10.1287/mnsc.1070.0789
+De Koster, R., Le-Duc, T., & Roodbergen, K. J. (2007). Design and control of warehouse order picking: A literature review. European Journal of Operational Research, 182(2), 481–501. https://doi.org/10.1016/j.ejor.2006.07.009
+Destro, I. R., Staudt, F. H., Somensi, K., & Taboada, C. (2023). The impacts of inventory record inaccuracy and cycle counting on distribution center performance. Production, 33, e20220077. https://doi.org/10.1590/0103-6513.20220077
+Frazelle, E. H. (2016). World-class warehousing and material handling (2nd ed.). McGraw-Hill Education.
+Zhen, L., & Li, H. (2022). A literature review of smart warehouse operations management. Frontiers of Engineering Management, 9(1), 31–55. https://doi.org/10.1007/s42524-021-0178-9
