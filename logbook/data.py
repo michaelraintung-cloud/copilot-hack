@@ -1,0 +1,41 @@
+JUDUL = ("KEPERCAYAAN SEBAGAI JEMBATAN: ANALISIS INTERDEPENDENSI DIGITAL MARKETING CAPABILITY, "
+         "PRODUCT LEGAL CERTIFICATION, DAN CUSTOMER TRUST DALAM MENINGKATKAN REPURCHASE INTENTION "
+         "PADA PRODUK KACANG TORE KAWANGKOAN DI PLATFORM E-COMMERCE SULAWESI UTARA")
+TIM = ["Michael Ch. Raintung, SE. MM   NIP. 197612192005011001",
+       "Sjendry Serulo Rommy Loindong, SE. MM NIP. 197609182001121002",
+       "Raymond Christian Kawet, SE. MM   NIP. 198012022005011004"]
+# (waktu, kegiatan, uraian)
+ROWS = [
+("5 Mei 2026", "Pengumuman Proposal Diterima", "Pengumuman penerima dana penelitian PNBP Tahun 2026 (Riset Dasar Unggulan Unsrat Klaster 2). Proposal tim dinyatakan lolos pendanaan."),
+("6 Mei 2026", "Kontrak Penelitian", "Penandatanganan Kontrak Penelitian PNBP tahun 2026"),
+("19 Mei 2026", "Dana Riset Diterima", "Dana Riset masuk melalui Rekening BRI"),
+("1 Juni 2026", "Persiapan", "Finalisasi rancangan, pembagian tugas, kebutuhan bahan dan alat.\n\nPembelian Bahan ATK (Hekter, Spidol, Pensil B2, Catrige Canon Color & Black). Pembuatan Baliho/Spanduk."),
+("8 Juni 2026", "Studi Pustaka", "Menelaah metode penelitian, serta menganalisis faktor-faktor pembentuk Repurchase Intention, Customer Trust, Digital Marketing Capability, dan Product Legal Certification."),
+("12 Juni 2026", "Pengadaan Bahan", "Mencatat sumber, jumlah, harga, dan kondisi bahan serta perlengkapan untuk pelaksanaan penelitian"),
+("15 Juni 2026", "Pembentukan Tim", "Pembentukan tim pelaksana: 3 dosen peneliti dan 3 mahasiswa pendamping (Happy Hansang, Intan Walelang, Karen Wuon). Pembagian tugas lapangan, pengolahan data, dan dokumentasi."),
+("22 Juni 2026", "Penyusunan Instrumen", "Menyusun kuesioner dan indikator variabel Digital Marketing Capability, Product Legal Certification, Customer Trust, dan Repurchase Intention (skala Likert); penentuan kriteria responden konsumen kacang tore di platform e-commerce."),
+("29 Juni 2026", "Uji Coba Instrumen", "Pra-uji (pilot) kuesioner pada responden terbatas; mencatat masukan keterbacaan item dan melakukan perbaikan redaksi pernyataan."),
+("3 Juli 2026", "Administrasi Lapangan", "Pengurusan Surat Tugas/SPPD dari LPPM Unsrat serta surat pengantar dan izin kegiatan ke Kecamatan Kawangkoan dan Pemerintah Desa Kanonang 2."),
+("7 Juli 2026", "Survei Pendahuluan", "Observasi awal dan koordinasi dengan Kepala Desa Kanonang 2 di sentra produksi kacang tore; identifikasi pelaku usaha, saluran penjualan online, dan status sertifikasi produk."),
+("13 Juli 2026", "Pelatihan Enumerator", "Pembekalan tim mahasiswa: teknik pengumpulan data, etika penelitian, cara pengisian kuesioner, serta penyiapan formulir daring (Google Form) dan cadangan kuesioner cetak."),
+("20 Juli 2026", "Pengambilan Sampel", "Penentuan dan pengambilan sampel responden konsumen kacang tore Kawangkoan pengguna platform e-commerce; penyebaran kuesioner tahap pertama."),
+("24 Juli 2026", "Pengumpulan Data Lapangan", "Pengumpulan data di sentra pemasaran Kecamatan Kawangkoan dan sentra produksi Desa Kanonang 2 bersama tim mahasiswa; dokumentasi foto kegiatan."),
+("27 Juli 2026", "Wawancara Pelaku Usaha", "Wawancara dengan pelaku usaha/pengrajin mengenai kemampuan pemasaran digital dan sertifikasi legal produk sebagai data pendukung."),
+("30 Juli 2026", "Verifikasi Data", "Pemeriksaan kelengkapan dan konsistensi kuesioner yang masuk; penyaringan data tidak lengkap/tidak valid hingga terkumpul 100 responden yang layak dianalisis."),
+("1 Agustus 2026", "Rekapitulasi Data", "Menginput dan merekap data kuesioner ke dalam lembar kerja (tabulasi), pengkodean variabel dan indikator."),
+("5 Agustus 2026", "Analisis Statistik", "Analisis data dengan Partial Least Squares (PLS-SEM): evaluasi model pengukuran (validitas dan reliabilitas) serta model struktural, termasuk pengujian peran mediasi Customer Trust."),
+("10 Agustus 2026", "Pembahasan Hasil", "Interpretasi hasil analisis: Customer Trust menjadi prediktor terkuat Repurchase Intention (beta = 0,548); Digital Marketing Capability masih berpengaruh langsung (beta = 0,168; p = 0,033), sedangkan Product Legal Certification berpengaruh melalui kepercayaan saja (beta = 0,092; p = 0,248). Dibahas bersama implikasi bagi UMKM kacang tore."),
+("14 Agustus 2026", "Penyusunan Laporan", "Menyusun metode, hasil, pembahasan, kesimpulan, tabel, dan dokumentasi."),
+("16 Agustus 2026", "Penutupan", "Memeriksa bukti pengeluaran, data mentah, dokumentasi, dan laporan hasil.\n\nPembayaran honorarium untuk pengolah data."),
+("17 Agustus 2026", "Pembuatan Draft Artikel dan Submit", "Menyusun draft artikel jurnal \"Trust as a Bridge: Digital Marketing Capability, Product Certification, and Repurchase Intention in E-Commerce\" dan men-submit-nya ke International Journal of Economics, Business and Innovation Research (IJEBIR), jurnal nasional terakreditasi Sinta 4."),
+("20 Agustus 2026", "Accepted Artikel (LOA)", "Artikel dinyatakan diterima oleh editor IJEBIR; Letter of Acceptance (LOA) diterbitkan."),
+("20 Agustus 2026", "Pembayaran Biaya Publikasi", "Pembayaran biaya penerbitan (publikasi) artikel pada IJEBIR; bukti pembayaran diarsipkan sebagai bagian pertanggungjawaban keuangan."),
+("9 September 2026", "Laporan", "Perampungan kegiatan penelitian.\n\nPembayaran honorarium bagi pembantu lapangan penunjang kegiatan penelitian."),
+("22 September 2026", "Evaluasi", "Evaluasi kegiatan dan penyelesaian rangkaian kegiatan penelitian."),
+("2 Oktober 2026", "Laporan Kemajuan Penelitian", "Laporan Kemajuan Penelitian diunggah melalui Portal Inspire, dilengkapi bukti luaran (draft artikel), foto kegiatan, lembar validasi keterhubungan dampak dan SDGs, serta Surat Tugas/SPPD."),
+("12 Oktober 2026", "Artikel Terbit", "Artikel terbit di IJEBIR Vol. 5 No. 06 (2026), hlm. 912-934, DOI: 10.63922/ijebir.v5i06.6835. Tautan: https://e-journal.citakonsultindo.or.id/index.php/IJEBIR/article/view/6835"),
+("14 Oktober 2026", "Pengarsipan Bukti Luaran", "Mengarsipkan bukti luaran artikel terbit (tautan dan DOI, PDF artikel, LOA, bukti pembayaran publikasi) untuk dilampirkan pada Laporan Akhir."),
+("20 Oktober 2026", "Perampungan", "Perampungan Laporan Akhir."),
+("26 Oktober 2026", "Monev", "Monitoring dan evaluasi pelaksanaan penelitian RDUU_K2 oleh LPPM Unsrat; pemaparan progres dan capaian luaran."),
+("November 2026", "Laporan Akhir Penelitian", "Penyerahan Laporan Akhir Penelitian beserta luaran (artikel terbit) dan pertanggungjawaban keuangan (rencana)."),
+]
