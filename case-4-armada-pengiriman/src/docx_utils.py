@@ -6,6 +6,8 @@ from docx.shared import Pt, Cm, RGBColor
 from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_LINE_SPACING, WD_BREAK
 from docx.enum.table import WD_TABLE_ALIGNMENT
 from docx.enum.section import WD_SECTION
+from docx.enum.style import WD_STYLE_TYPE
+from docx.enum.text import WD_TAB_ALIGNMENT, WD_TAB_LEADER
 from docx.oxml.ns import qn
 from docx.oxml import OxmlElement
 
@@ -34,6 +36,34 @@ def set_cell_margins(table, top=40, bottom=40, left=80, right=80):
         el.set(qn("w:type"), "dxa")
         mar.append(el)
     tblPr.append(mar)
+
+
+def set_table_width(table, widths):
+    """Set tblW + tblGrid agar Word menghormati lebar kolom (bukan autofit)."""
+    tbl = table._tbl
+    tblPr = tbl.tblPr
+    # hapus tblW lama
+    for el in tblPr.findall(qn("w:tblW")):
+        tblPr.remove(el)
+    tblW = OxmlElement("w:tblW")
+    total = int(sum(widths) * 567)  # cm -> dxa
+    tblW.set(qn("w:w"), str(total))
+    tblW.set(qn("w:type"), "dxa")
+    tblPr.append(tblW)
+
+    layout = OxmlElement("w:tblLayout")
+    layout.set(qn("w:type"), "fixed")
+    tblPr.append(layout)
+
+    grid = tbl.find(qn("w:tblGrid"))
+    if grid is not None:
+        tbl.remove(grid)
+    grid = OxmlElement("w:tblGrid")
+    for w in widths:
+        gc = OxmlElement("w:gridCol")
+        gc.set(qn("w:w"), str(int(w * 567)))
+        grid.append(gc)
+    tbl.insert(list(tbl).index(tblPr) + 1, grid)
 
 
 def set_repeat_header(row):
@@ -185,6 +215,54 @@ class Report:
                          "color": "navy" if color is not None else None})
         return par
 
+    def space(self, pts=12):
+        """Baris kosong dengan tinggi tetap (ikut tercatat untuk pratinjau PDF)."""
+        par = self.doc.add_paragraph()
+        pf = par.paragraph_format
+        pf.space_after = Pt(0)
+        pf.space_before = Pt(0)
+        pf.line_spacing = 1.0
+        run = par.add_run("")
+        run.font.size = Pt(max(1, pts * 0.75))
+        self.log.append({"t": "space", "pts": pts})
+        return par
+
+    def rule(self, width_cm=15.0):
+        """Garis horizontal tipis (border bawah paragraf kosong)."""
+        par = self.doc.add_paragraph()
+        pf = par.paragraph_format
+        pf.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        pf.space_before = Pt(6)
+        pf.space_after = Pt(6)
+        pf.line_spacing = 1.0
+        pPr = par._p.get_or_add_pPr()
+        borders = OxmlElement("w:pBdr")
+        bottom = OxmlElement("w:bottom")
+        bottom.set(qn("w:val"), "single")
+        bottom.set(qn("w:sz"), "8")
+        bottom.set(qn("w:space"), "1")
+        bottom.set(qn("w:color"), "1F3864")
+        borders.append(bottom)
+        pPr.append(borders)
+        self.log.append({"t": "rule", "width_cm": width_cm})
+        return par
+
+    def center_line(self, text, size=12, bold=False, color=None, italic=False,
+                    space_after=2, line_spacing=1.0):
+        """Baris rata tengah tanpa indentasi (dipakai pada halaman sampul)."""
+        par = self.doc.add_paragraph()
+        pf = par.paragraph_format
+        pf.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        pf.line_spacing = line_spacing
+        pf.space_after = Pt(space_after)
+        pf.space_before = Pt(0)
+        pf.first_line_indent = Cm(0)
+        self._rich(par, text, size=size, bold=bold, italic=italic, color=color)
+        self.log.append({"t": "center", "text": text, "size": size, "bold": bold,
+                         "italic": italic, "color": "navy" if color is not None else None,
+                         "after": space_after})
+        return par
+
     def _rich(self, par, text, size=12, bold=False, italic=False, color=None):
         """Mendukung penanda **tebal** dan *miring* di dalam teks."""
         import re
@@ -272,6 +350,7 @@ class Report:
         table.autofit = False
         set_borders(table)
         set_cell_margins(table)
+        set_table_width(table, widths)
 
         align = align or ["center"] * n
         hdr = table.rows[0]
@@ -358,6 +437,87 @@ class Report:
             r.italic = True
             r.font.color.rgb = GREY
         return num
+
+    def setup_properties(self, title, subject, author, keywords, comments):
+        cp = self.doc.core_properties
+        cp.title = title
+        cp.subject = subject
+        cp.author = author
+        cp.last_modified_by = author
+        cp.keywords = keywords
+        cp.comments = comments
+        cp.category = "Laporan Studi Kasus"
+        cp.language = "id-ID"
+
+    def enable_field_update(self):
+        """Minta Word memperbarui field (daftar isi & nomor halaman) saat dibuka."""
+        settings = self.doc.settings.element
+        el = settings.find(qn("w:updateFields"))
+        if el is None:
+            el = OxmlElement("w:updateFields")
+            settings.append(el)
+        el.set(qn("w:val"), "true")
+
+    # ---------------------------------------------------------------- daftar isi
+    def toc(self, entries, title="DAFTAR ISI"):
+        """Sisipkan field TOC Word dengan isi tersimpan (entries: level, teks, halaman)."""
+        self.page_break()
+        self.caption(title, size=12, space_before=0, space_after=12)
+
+        # gaya paragraf entri daftar isi
+        for lvl, tab in ((1, 0.0), (2, 0.6), (3, 1.2)):
+            name = f"TOC {lvl}"
+            if name not in [st.name for st in self.doc.styles]:
+                st = self.doc.styles.add_style(name, WD_STYLE_TYPE.PARAGRAPH)
+                st.base_style = self.doc.styles["Normal"]
+                st.font.name = FONT
+                st.font.size = Pt(10.5)
+                st.font.bold = (lvl == 1)
+                pf = st.paragraph_format
+                pf.left_indent = Cm(tab)
+                pf.first_line_indent = Cm(0)
+                pf.space_before = Pt(4 if lvl == 1 else 0)
+                pf.space_after = Pt(0)
+                pf.line_spacing = 1.0
+                pf.alignment = WD_ALIGN_PARAGRAPH.LEFT
+                pf.tab_stops.add_tab_stop(Cm(15.9), WD_TAB_ALIGNMENT.RIGHT, WD_TAB_LEADER.DOTS)
+
+        # awal field
+        first = self.doc.add_paragraph()
+        first.paragraph_format.space_after = Pt(0)
+        first.paragraph_format.line_spacing = 1.0
+        r = first.add_run()
+        fc = OxmlElement("w:fldChar"); fc.set(qn("w:fldCharType"), "begin")
+        r._r.append(fc)
+        r2 = first.add_run()
+        instr = OxmlElement("w:instrText")
+        instr.set(qn("xml:space"), "preserve")
+        instr.text = ' TOC \\o "1-3" \\h \\z \\u '
+        r2._r.append(instr)
+        r3 = first.add_run()
+        sep = OxmlElement("w:fldChar"); sep.set(qn("w:fldCharType"), "separate")
+        r3._r.append(sep)
+
+        # isi tersimpan
+        last_par = None
+        for lvl, text, page in entries:
+            par = self.doc.add_paragraph(style=f"TOC {lvl}")
+            run = par.add_run(text)
+            run.font.name = FONT
+            run.font.size = Pt(10.5)
+            run.bold = (lvl == 1)
+            run2 = par.add_run("\t" + str(page))
+            run2.font.name = FONT
+            run2.font.size = Pt(10.5)
+            run2.bold = (lvl == 1)
+            last_par = par
+            self.log.append({"t": "tocentry", "level": lvl, "text": text, "page": page})
+
+        # akhir field
+        endp = last_par if last_par is not None else first
+        r = endp.add_run()
+        fc = OxmlElement("w:fldChar"); fc.set(qn("w:fldCharType"), "end")
+        r._r.append(fc)
 
     def save(self, path):
         self.doc.save(path)

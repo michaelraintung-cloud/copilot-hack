@@ -24,63 +24,40 @@ NAVY = RGBColor(0x1F, 0x38, 0x64)
 
 # ============================================================ HALAMAN SAMPUL
 def sampul(r: Report):
-    d = r.doc
-    for _ in range(2):
-        d.add_paragraph().paragraph_format.space_after = Pt(0)
+    line = r.center_line
 
-    def line(text, size, bold=False, color=None, space_after=2):
-        p = d.add_paragraph()
-        p.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.CENTER
-        p.paragraph_format.line_spacing = 1.0
-        p.paragraph_format.space_after = Pt(space_after)
-        run = p.add_run(text)
-        run.font.name = FONT
-        run.font.size = Pt(size)
-        run.bold = bold
-        if color:
-            run.font.color.rgb = color
-        return p
-
+    r.space(20)
     line("INDUSTRIAL TECHNOLOGY CHALLENGE", 13, True)
     line("STUDI KASUS MANAJEMEN INDUSTRI", 13, True)
-    p = d.add_paragraph()
-    p.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    p.paragraph_format.space_after = Pt(0)
-    p.add_run("─" * 46).font.size = Pt(9)
+    r.rule()
 
-    for _ in range(3):
-        d.add_paragraph().paragraph_format.space_after = Pt(0)
-
-    line("ARMADA BANYAK, PENGIRIMAN TETAP TERLAMBAT", 19, True, NAVY)
+    r.space(56)
+    line("ARMADA BANYAK, PENGIRIMAN TETAP TERLAMBAT", 18, True, NAVY)
+    r.space(8)
     line("Analisis Efisiensi Distribusi dan Kualitas Layanan", 12)
     line("pada Perusahaan Distribusi Barang Konsumsi", 12)
-    line("(Studi Kasus 4 — Bidang Supply Chain & Distribution)", 11)
-
-    for _ in range(2):
-        d.add_paragraph().paragraph_format.space_after = Pt(0)
-
+    r.space(4)
+    line("(Studi Kasus 4 — Bidang Supply Chain & Distribution)", 11, False, colors_grey())
+    r.space(26)
     line("LAPORAN STUDI KASUS", 12, True)
 
-    for _ in range(4):
-        d.add_paragraph().paragraph_format.space_after = Pt(0)
-
+    r.space(72)
     line("Disusun oleh:", 11)
     line("[Nama Mahasiswa]", 12, True)
     line("NIM: [....................]          Kelas: [....................]", 11)
-
-    for _ in range(2):
-        d.add_paragraph().paragraph_format.space_after = Pt(0)
-
+    r.space(18)
     line("Mata Kuliah: Manajemen Industri", 11)
     line("Dosen Pengampu: [Nama Dosen Pengampu]", 11)
 
-    for _ in range(3):
-        d.add_paragraph().paragraph_format.space_after = Pt(0)
-
+    r.space(64)
     line("PROGRAM STUDI [NAMA PROGRAM STUDI]", 12, True)
     line("FAKULTAS [NAMA FAKULTAS]", 12, True)
     line("UNIVERSITAS [NAMA UNIVERSITAS]", 12, True)
     line("TAHUN [20XX]", 12, True)
+
+
+def colors_grey():
+    return RGBColor(0x59, 0x59, 0x59)
 
 
 # ============================================================ RINGKASAN
@@ -1036,9 +1013,32 @@ def lampiran(r: Report):
         align=["center", "left", "left", "left", "center"], font_size=7.5)
 
 # ============================================================ MAIN
+TOC_ENTRIES = os.path.join(HERE, "..", "output", "toc-entries.json")
+
+
+def load_toc():
+    """Entri daftar isi hasil pass sebelumnya (level, teks, halaman)."""
+    if os.path.exists(TOC_ENTRIES):
+        import json
+        with open(TOC_ENTRIES, encoding="utf-8") as f:
+            return [tuple(e) for e in json.load(f)]
+    return None
+
+
 def main():
     r = Report()
+    r.setup_properties(
+        title="Armada Banyak, Pengiriman Tetap Terlambat — Laporan Studi Kasus 4",
+        subject="Analisis Efisiensi Distribusi dan Kualitas Layanan pada Perusahaan Distribusi "
+                "Barang Konsumsi (Supply Chain & Distribution)",
+        author="[Nama Mahasiswa]",
+        keywords="optimasi rute; keterlambatan pengiriman; ETA; tata kelola data; supply chain",
+        comments="Laporan Studi Kasus Manajemen Industri — Industrial Technology Challenge",
+    )
     sampul(r)
+    entries = load_toc()
+    if entries:
+        r.toc(entries)
     ringkasan(r)
     bab1(r)
     bab2(r)
@@ -1048,6 +1048,7 @@ def main():
     bab6(r)
     daftar_pustaka(r)
     lampiran(r)
+    r.enable_field_update()
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     r.save(OUT)
     print("Laporan tersimpan:", os.path.abspath(OUT))

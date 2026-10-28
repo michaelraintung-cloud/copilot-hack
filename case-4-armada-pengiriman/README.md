@@ -7,7 +7,7 @@ Sumber kasus: `INDUSTRIAL TECHNOLOGY CHALLENGE case.pdf` (halaman 10–11).
 
 | Berkas | Keterangan |
 |---|---|
-| `output/laporan-studi-kasus-4.docx` | **Berkas utama**. A4, Times New Roman 12 pt, spasi 1,5, margin 2,54 cm, rata kiri-kanan. Halaman sampul masih memakai penanda `[...]` untuk nama, NIM, kelas, dosen, dan institusi. |
+| `output/laporan-studi-kasus-4.docx` | **Berkas utama siap unduh/edit di MS Word.** A4, Times New Roman 12 pt, spasi 1,5, margin 2,54 cm, rata kiri-kanan, daftar isi otomatis (field TOC). Sampul memakai penanda `[...]` untuk nama, NIM, kelas, dosen, dan institusi — cukup diganti. |
 | `output/laporan-studi-kasus-4.pdf` | Versi PDF untuk dibaca/dicetak (pratinjau tata letak). |
 | `figures/*.png` | Empat gambar: alur proses + *pain points*, *fishbone*, tornado sensitivitas, Gantt 90 hari. |
 | `src/model.py` | Model perhitungan: seluruh angka laporan dihitung dari satu sumber agar konsisten dan dapat diaudit. |
@@ -18,7 +18,13 @@ Sumber kasus: `INDUSTRIAL TECHNOLOGY CHALLENGE case.pdf` (halaman 10–11).
 
 ## Struktur laporan
 
-Sampul → Ringkasan → Bab I–VI → Daftar Pustaka → Lampiran 1–8.
+Sampul → Daftar Isi → Ringkasan → Bab I–VI → Daftar Pustaka → Lampiran 1–8.
+
+**Membuka di MS Word.** Daftar isi dibuat sebagai *field* TOC asli. Saat berkas dibuka,
+Word menanyakan "This document contains fields that may refer to other files. Do you want to
+update?" — pilih **Yes** agar nomor halaman disegarkan otomatis (atau klik kanan pada daftar
+isi → *Update Field* → *Update entire table*). Sebelum itu pun nomor halaman sudah terisi
+benar, jadi laporan tetap rapi bila dipilih No.
 
 Kedelapan output wajib pada petunjuk studi kasus terpenuhi:
 
@@ -35,8 +41,12 @@ Kedelapan output wajib pada petunjuk studi kasus terpenuhi:
 ```
 python3 src/model.py     # cetak seluruh perhitungan
 python3 src/figures.py   # regenerasi gambar
-python3 src/build_report.py && python3 src/render_pdf.py
+python3 src/build_all.py # bangun DOCX + PDF, sinkronkan nomor halaman daftar isi (dua tahap)
 ```
+
+`build_all.py` menjalankan dua tahap: (1) bangun dokumen tanpa daftar isi lalu ukur halaman tiap
+judul, (2) bangun ulang dengan daftar isi yang sudah berisi nomor halaman, lalu verifikasi
+sampai nomor halaman stabil (saat ini 40 entri, 0 selisih).
 
 | Besaran | Nilai |
 |---|---|

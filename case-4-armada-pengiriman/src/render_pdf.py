@@ -163,6 +163,17 @@ def build_table(spec):
     return t
 
 
+def _indent_table(tbl, left):
+    outer = Table([[tbl]], colWidths=[15.9 * cm])
+    outer.setStyle(TableStyle([
+        ("LEFTPADDING", (0, 0), (-1, -1), left),
+        ("RIGHTPADDING", (0, 0), (-1, -1), 0),
+        ("TOPPADDING", (0, 0), (-1, -1), 0),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 0),
+    ]))
+    return outer
+
+
 def to_flow(log):
     flow = []
     for blk in log:
@@ -194,6 +205,52 @@ def to_flow(log):
             if blk.get("color") == "navy":
                 st = st.clone("navy", textColor=NAVY)
             flow.append(Paragraph(rich(blk["text"], size), st))
+        elif t == "space":
+            flow.append(Spacer(1, blk.get("pts", 12)))
+        elif t == "rule":
+            w = blk.get("width_cm", 15.0) * cm
+            t2 = Table([[""]], colWidths=[w], rowHeights=[1])
+            t2.setStyle(TableStyle([
+                ("LINEBELOW", (0, 0), (-1, -1), 0.9, NAVY),
+                ("TOPPADDING", (0, 0), (-1, -1), 0),
+                ("BOTTOMPADDING", (0, 0), (-1, -1), 0),
+            ]))
+            flow.append(Spacer(1, 6))
+            flow.append(t2)
+            flow.append(Spacer(1, 6))
+        elif t == "center":
+            size = blk.get("size", 12)
+            txt = blk["text"]
+            style_ = style(size, leading=size * (1.0 if size >= 12 else 1.2), align=TA_CENTER,
+                           space_after=blk.get("after", 2),
+                           font=FONT_B if blk.get("bold") else FONT_R)
+            if blk.get("color") == "navy":
+                style_ = style_.clone("navycenter", textColor=NAVY)
+            flow.append(Paragraph(rich(txt, size, bold=blk.get("bold"), italic=blk.get("italic")),
+                                  style_))
+        elif t == "tocentry":
+            lvl = blk.get("level", 1)
+            size = 10.5
+            left = (0.0, 0.6, 1.2)[min(lvl, 3) - 1] * cm
+            bold = lvl == 1
+            txt = Paragraph(rich(blk["text"], size, bold=bold),
+                            ParagraphStyle("toc", fontName=FONT_B if bold else FONT_R,
+                                           fontSize=size, leading=size * 1.12,
+                                           alignment=TA_LEFT))
+            num = Paragraph(str(blk["page"]),
+                            ParagraphStyle("tocn", fontName=FONT_B if bold else FONT_R,
+                                           fontSize=size, leading=size * 1.12,
+                                           alignment=TA_RIGHT))
+            tbl = Table([[txt, num]], colWidths=[15.9 * cm - left - 1.2 * cm, 1.2 * cm])
+            tbl.setStyle(TableStyle([
+                ("LEFTPADDING", (0, 0), (-1, -1), 0),
+                ("RIGHTPADDING", (0, 0), (-1, -1), 0),
+                ("TOPPADDING", (0, 0), (-1, -1), 5 if lvl == 1 else 0.6),
+                ("BOTTOMPADDING", (0, 0), (-1, -1), 0.6),
+                ("VALIGN", (0, 0), (-1, -1), "BOTTOM"),
+            ]))
+            flow.append(Spacer(1, 0))
+            flow.append(tbl) if left == 0 else flow.append(_indent_table(tbl, left))
         elif t == "list":
             size = blk.get("size", 12)
             marker = blk["marker"]
