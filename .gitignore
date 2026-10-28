@@ -352,3 +352,6 @@ MigrationBackup/
 # Python
 __pycache__/
 *.pyc
+
+# folder sajian unduhan (salinan, bukan sumber)
+case-4-armada-pengiriman/unduhan/
