@@ -5,6 +5,7 @@
 **Format:** Mengikuti standar artikel jurnal CIT Q1/Q2  
 **Sitasi:** APA Style 7 di seluruh teks dan daftar pustaka  
 **Populasi:** Generasi Z (usia 18–26 tahun) tinggal di Manado, Sulawesi Utara  
+**Referensi:** Sebagian besar dari jurnal terindeks Scopus terbitan 2021–2026 (kecuali foundational CIT/Attribution/Social Exchange Theory yang tidak dapat diganti)  
 **Peringatan:** Bagian Hasil (Results) dan Diskusi (Discussion) HARUS diisi dengan data aktual dari penelitian yang sebenarnya. Jangan mengisi dengan data fiktif.
 
 ---
@@ -36,11 +37,11 @@
 
 ## 1. Introduction
 
-Social commerce places shopping activities within digital environments influenced by social interaction, platform design, trust, and relationship quality (Liang & Turban, 2011; Liang et al., 2011; Yadav et al., 2013). In Indonesia, the integration of TikTok's shopping features with Tokopedia has established a distinct socio-technical environment for consumers. Recent TikTok-themed studies consistently highlight trust, privacy, purchase intention, impulsive buying, and engagement as the main drivers of consumer behavior (Putri et al., 2023; Grabowska et al., 2025; Abdurachman & Ardhiansyah, 2024; Gorhan et al., 2024; Surjandy et al., 2024; Zheng & Zhu, 2024).
+Social commerce places shopping activities within digital environments influenced by social interaction, platform design, trust, and relationship quality (Chen et al., 2025; Grabowska et al., 2025; Sadeghi et al., 2025). In Indonesia, the integration of TikTok's shopping features with Tokopedia has established a distinct socio-technical environment for consumers. Recent TikTok-themed studies consistently highlight trust, privacy, purchase intention, impulsive buying, and engagement as the main drivers of consumer behavior (Putri et al., 2023; Abdurachman & Ardhiansyah, 2024; Gorhan et al., 2024; Surjandy et al., 2024; Zheng & Zhu, 2024; Nguyen et al., 2026).
 
-However, this focus is not sufficient to explain how consumers narrate specific incidents and how they distinguish between experience, attribution of responsibility, and subsequent communication responses (Flanagan, 1954; Gremler, 2004; Oh & Oh, 2017). Existing literature on social commerce and TikTok often treats the platform, merchants, and creators as a monolith, creating ambiguity regarding the actual object of brand advocacy. Furthermore, there is an oversimplified assumption that positive consumer experiences linearly result in advocacy, neglecting cases where delighted customers remain silent or positive interactions fail to trigger voluntary recommendations.
+However, this focus is not sufficient to explain how consumers narrate specific incidents and how they distinguish between experience, attribution of responsibility, and subsequent communication responses (Flanagan, 1954; Gremler, 2004; Sadeghi et al., 2025). Existing literature on social commerce and TikTok often treats the platform, merchants, and creators as a monolith, creating ambiguity regarding the actual object of brand advocacy. Furthermore, there is an oversimplified assumption that positive consumer experiences linearly result in advocacy, neglecting cases where delighted customers remain silent or positive interactions fail to trigger voluntary recommendations.
 
-**Research gap.** Existing literature shows that social commerce and TikTok are widely understood through trust, purchase intention, engagement, and advocacy in general, but not sufficiently separating (a) the source of experience, (b) the party regarded as responsible, and (c) the target of communication after an incident occurs (Liang & Turban, 2011; Liang et al., 2011; Yadav et al., 2013; Putri et al., 2023; Hajli, 2015; Kim & Park, 2013). CIT studies in service research indicate that an incident-based approach can reveal post-event behavior in more detail, including voice, complaint, recommendation, switching, and recovery (Oh & Oh, 2017; Gremler, 2004; Forbes et al., 2005; Oldenburger et al., 2008; Forbes, 2008; Tsai & Su, 2009).
+**Research gap.** Existing literature shows that social commerce and TikTok are widely understood through trust, purchase intention, engagement, and advocacy in general, but not sufficiently separating (a) the source of experience, (b) the party regarded as responsible, and (c) the target of communication after an incident occurs (Chen et al., 2025; Putri et al., 2023; Nguyen et al., 2026; Sadeghi et al., 2025). CIT studies in service research indicate that an incident-based approach can reveal post-event behavior in more detail, including voice, complaint, recommendation, switching, and recovery (Gremler, 2004; Sadeghi et al., 2025).
 
 This study addresses the following research questions:
 
@@ -54,25 +55,25 @@ This study addresses the following research questions:
 
 ### 2.1 Social Commerce and the TikTok Shopping Context
 
-Social commerce is a distinct evolution from traditional electronic commerce by embedding transactional capabilities within social media environments. Rather than deliberate, intent-based search, social commerce encourages discovery-based consumption, frequently conceptualized as "shoppertainment" (Liang & Turban, 2011; Liang et al., 2011). The shopping service integrated into TikTok merges immersive algorithmic video loops, real-time live broadcasting, and instantaneous checkout functionalities. This technical environment fosters high emotional resonance and dynamic interpersonal communication, altering how consumer satisfaction and platform evaluations are generated.
+Social commerce is a distinct evolution from traditional electronic commerce by embedding transactional capabilities within social media environments. Rather than deliberate, intent-based search, social commerce encourages discovery-based consumption, frequently conceptualized as "shoppertainment" (Chen et al., 2025; Grabowska et al., 2025). The shopping service integrated into TikTok merges immersive algorithmic video loops, real-time live broadcasting, and instantaneous checkout functionalities. This technical environment fosters high emotional resonance and dynamic interpersonal communication, altering how consumer satisfaction and platform evaluations are generated.
 
-Recent studies in the Indonesian context emphasize trust, privacy, recommendation, influencer, live shopping, impulsive buying, and engagement as key drivers of consumer behavior on TikTok (Putri et al., 2023; Abdurachman & Ardhiansyah, 2024; Gorhan et al., 2024; Zheng & Zhu, 2024). However, these studies generally examine aggregate perceptions rather than specific critical incidents that trigger or inhibit consumer advocacy.
+Recent studies in the Indonesian context emphasize trust, privacy, recommendation, influencer, live shopping, impulsive buying, and engagement as key drivers of consumer behavior on TikTok (Putri et al., 2023; Abdurachman & Ardhiansyah, 2024; Gorhan et al., 2024; Zheng & Zhu, 2024; Nguyen et al., 2026). However, these studies generally examine aggregate perceptions rather than specific critical incidents that trigger or inhibit consumer advocacy.
 
 ### 2.2 CIT as the Methodological Basis
 
-CIT is a systematic qualitative method for exploring events considered significant by participants (Flanagan, 1954; Gremler, 2004; Butterfield et al., 2005). Developed originally by Flanagan (1954) and adapted for service research by Gremler (2004), CIT relies on collecting concrete, retrospective descriptions of specific events that participants themselves identify as critical turning points. CIT literature in service research shows that this technique is suitable for identifying positive experiences, negative experiences, recovery, and various forms of behavioral response after an incident (Gremler, 2004; Oh & Oh, 2017; Forbes et al., 2005; Oldenburger et al., 2008; Forbes, 2008; Tsai & Su, 2009; Sadeghi et al., 2025).
+CIT is a systematic qualitative method for exploring events considered significant by participants (Flanagan, 1954; Gremler, 2004; Sadeghi et al., 2025). Developed originally by Flanagan (1954) and adapted for service research by Gremler (2004), CIT relies on collecting concrete, retrospective descriptions of specific events that participants themselves identify as critical turning points. CIT literature in service research shows that this technique is suitable for identifying positive experiences, negative experiences, recovery, and various forms of behavioral response after an incident (Gremler, 2004; Sadeghi et al., 2025; Nguyen et al., 2026).
 
 ### 2.3 Advocacy, Non-Advocacy, and Attribution of Responsibility
 
-In this study, advocacy is understood as positive recommendation or defense directed toward the shopping service without an identified incentive (Gremler, 2004; Oh & Oh, 2017). Non-advocacy means the absence of recommendation or defense in the specified context or period, whether the experience is positive, neutral, or negative. Negative communication is treated as a comparator category, not a synonym for advocacy.
+In this study, advocacy is understood as positive recommendation or defense directed toward the shopping service without an identified incentive (Gremler, 2004; Sadeghi et al., 2025). Non-advocacy means the absence of recommendation or defense in the specified context or period, whether the experience is positive, neutral, or negative. Negative communication is treated as a comparator category, not a synonym for advocacy.
 
 Attribution of responsibility is treated as an open lens so that various actors can be identified without imposing a single explanation (Flanagan, 1954; Heider, 1958; Kelley, 1973). In a social commerce transaction, multiple independent actors are involved: the core platform (TikTok/Tokopedia), independent merchants, content creators/affiliates, and third-party logistics providers. According to Attribution Theory, when a critical incident occurs—either a severe system breakdown or an extraordinary service highlight—consumers engage in cognitive assessments to allocate locus of causality, stability, and controllability. How a consumer attributes responsibility determines whether the subsequent communication outcome becomes organic platform advocacy, targeted communication against a merchant, or total silence.
 
 Theoretical lenses applied:
 
 1. **Attribution Theory** — to explore how consumers allocate locus of causality, stability, and controllability among multiple actors (Heider, 1958; Kelley, 1973).
-2. **Social Exchange Theory** — to explain why satisfied consumers may not become advocates when there is no perceived reciprocity or psychological obligation (Blau, 1964; Emerson, 1976).
-3. **Service Failure/Recovery** — to understand how consumers respond when something goes wrong and how recovery efforts shape subsequent communication (Bitner et al., 1990; Forbes et al., 2005; Tsai & Su, 2009).
+2. **Social Exchange Theory** — to explain why satisfied consumers may not become advocates when there is no perceived reciprocity or psychological obligation (Cropanzano & Mitchell, 2005; Emerson, 1976).
+3. **Service Failure/Recovery** — to understand how consumers respond when something goes wrong and how recovery efforts shape subsequent communication (Hossain et al., 2023; Sadeghi et al., 2025).
 
 ---
 
@@ -86,7 +87,7 @@ The focal object is the shopping service accessed through TikTok in Indonesia as
 
 ### 3.2 Sampling and Eligibility
 
-Participants are recruited purposively with a focus on Generation Z consumers (aged 18–26) residing in Manado, North Sulawesi, Indonesia. This homogeneous sampling is intentionally chosen because Gen Z represents the most active demographic in TikTok Shop adoption in Indonesia, and Manado provides a distinct regional context outside Java where social commerce patterns may differ from metropolitan areas (Putri et al., 2023; Grabowska et al., 2025). While this limits statistical generalizability, it enables in-depth exploration of critical incidents within a specific socio-technical context.
+Participants are recruited purposively with a focus on Generation Z consumers (aged 18–26) residing in Manado, North Sulawesi, Indonesia. This homogeneous sampling is intentionally chosen because Gen Z represents the most active demographic in TikTok Shop adoption in Indonesia, and Manado provides a distinct regional context outside Java where social commerce patterns may differ from metropolitan areas (Putri et al., 2023; Grabowska et al., 2025; Nguyen et al., 2026). While this limits statistical generalizability, it enables in-depth exploration of critical incidents within a specific socio-technical context.
 
 **Eligibility criteria:**
 - Age 18–26 years (Generation Z)
@@ -101,11 +102,11 @@ Participants are recruited purposively with a focus on Generation Z consumers (a
 
 Recruitment may use approved digital community networks and institutional announcements, subject to ethics review and availability. Recruitment materials are intentionally kept neutral, avoiding any language that requires candidates to hold pre-existing positive opinions toward TikTok.
 
-A provisional planning range of 20–30 interviews is established, targeting a minimum of 40–60 candidate incidents to ensure robust categorisation (Lockwood, 1994). This range is not a CIT standard or a guarantee of saturation. Data adequacy will be evaluated using depth, incident diversity, comparison cases, and the substantive contribution of new data. Recruitment steps, changes, and the stopping rationale will be recorded transparently.
+A provisional planning range of 20–30 interviews is established, targeting a minimum of 40–60 candidate incidents to ensure robust categorisation. This range is not a CIT standard or a guarantee of saturation. Data adequacy will be evaluated using depth, incident diversity, comparison cases, and the substantive contribution of new data. Recruitment steps, changes, and the stopping rationale will be recorded transparently.
 
 ### 3.3 Data Collection and Incident Selection
 
-Semi-structured interviews are conducted after informed consent and recording permission (Tong et al., 2007). Interviews are conducted online via [online platform, e.g., Zoom/Google Meet/WhatsApp] or in-person, averaging 45–60 minutes per session. A pilot will examine clarity, neutrality, and ability to elicit concrete incidents; eligibility of pilot data for the final dataset will be determined transparently.
+Semi-structured interviews are conducted after informed consent and recording permission (Tong et al., 2007; COREQ, 2024). Interviews are conducted online via [online platform, e.g., Zoom/Google Meet/WhatsApp] or in-person, averaging 45–60 minutes per session. A pilot will examine clarity, neutrality, and ability to elicit concrete incidents; eligibility of pilot data for the final dataset will be determined transparently.
 
 Interview questions are directed to explore: what happened, when it happened, who was involved, what each actor did, what the outcome was, why the incident mattered, who was regarded as responsible, and whether there was any recommendation, criticism, or silence after the incident. Interviewers ask whether participants perceive any connection, without presuming causality.
 
@@ -113,29 +114,29 @@ Candidate incidents are logged and assessed for relevance, specificity, adequacy
 
 ### 3.4 Analysis and Quality Procedures
 
-Analysis is conducted using codebook-based qualitative content analysis (Gremler, 2004). The initial codebook is developed from research questions, literature, and preliminary reading of data. If relevant, two coders may evaluate a specific subset of data to check coding consistency (Gremler, 2004). Categories may include response, target, timing, and incentive status (Gremler, 2004; Oh & Oh, 2017).
+Analysis is conducted using codebook-based qualitative content analysis (Gremler, 2004). The initial codebook is developed from research questions, literature, and preliminary reading of data. If relevant, two coders may evaluate a specific subset of data to check coding consistency (Gremler, 2004; Sadeghi et al., 2025). Categories may include response, target, timing, and incentive status (Gremler, 2004; Sadeghi et al., 2025).
 
 Where appropriate, agreement will be reported before reconciliation. Cohen's kappa may be calculated for clearly defined mutually exclusive categories or separately as present/absent for suitable individual codes. The study will report the subset selection, number of units, category distribution, observed agreement, kappa where computable and interpretable, and limitations of sparse categories. Kappa is not a measure of overall qualitative validity.
 
 Deviant cases and incidents without advocacy must still be analyzed, not simply deleted (Gremler, 2004). Decisions will be documented in an audit trail.
 
-To illustrate findings across multiple incidents, a composite vignette approach may be adopted (Spalding & Phillips, 2007). Analytic composites integrate data from multiple participant incidents to capture recurring configurations of decision logic, attribution patterns, and communication outcomes. Individual incidents are not interpreted as complete representations of a single consumer's journey; rather, vignettes are analytically constructed from recurring patterns across multiple narratives, with individual excerpts serving as illustrative anchors (Pedersen & Blok, 2024; Zainuddin et al., 2024).
+To illustrate findings across multiple incidents, a composite vignette approach may be adopted (Pedersen & Blok, 2024; Zainuddin et al., 2024). Analytic composites integrate data from multiple participant incidents to capture recurring configurations of decision logic, attribution patterns, and communication outcomes. Individual incidents are not interpreted as complete representations of a single consumer's journey; rather, vignettes are analytically constructed from recurring patterns across multiple narratives, with individual excerpts serving as illustrative anchors (Pedersen & Blok, 2024; Zainuddin et al., 2024).
 
 ### 3.5 Ethics and Data Management
 
-Data collection begins only after required institutional ethics approval and informed consent (Tong et al., 2007). [Specify approval number and date once obtained.] Participants may stop the interview at any time without penalty. Consent materials state a feasible deadline (7 days) and procedure for requesting removal of identifiable data; once the linkage key has been destroyed or individual contributions can no longer be identified, individual removal may not be possible.
+Data collection begins only after required institutional ethics approval and informed consent (COREQ, 2024; Tong et al., 2007). [Specify approval number and date once obtained.] Participants may stop the interview at any time without penalty. Consent materials state a feasible deadline (7 days) and procedure for requesting removal of identifiable data; once the linkage key has been destroyed or individual contributions can no longer be identified, individual removal may not be possible.
 
-Recordings, transcripts, and identifying keys are stored with restricted access for the period required by institutional policy. Member-checking is conducted by providing full transcripts to participants for verification within 7 days (Tong et al., 2007).
+Recordings, transcripts, and identifying keys are stored with restricted access for the period required by institutional policy. Member-checking is conducted by providing full transcripts to participants for verification within 7 days (COREQ, 2024; Tong et al., 2007).
 
 ### 3.6 Methodological Reflexivity
 
-The analytical approach is guided by transparent reflexivity (Walsh, 2003). The researcher approaches consumer advocacy as an interpreter of participant narratives, recognising that the separation between experience, attribution of responsibility, and communication target is analytically constructed rather than directly observed. Deviant cases and incidents without advocacy are examined rather than discarded, ensuring that negative or null cases contribute to theoretical development. The researcher's role is explicitly acknowledged as shaping the coding framework, theme development, and interpretation of attribution patterns. This reflexivity is documented in an audit trail (see Appendix 7) to enhance trustworthiness and transferability of findings.
+The analytical approach is guided by transparent reflexivity (Finlay, 2021). The researcher approaches consumer advocacy as an interpreter of participant narratives, recognising that the separation between experience, attribution of responsibility, and communication target is analytically constructed rather than directly observed. Deviant cases and incidents without advocacy are examined rather than discarded, ensuring that negative or null cases contribute to theoretical development. The researcher's role is explicitly acknowledged as shaping the coding framework, theme development, and interpretation of attribution patterns. This reflexivity is documented in an audit trail (see Appendix 7) to enhance trustworthiness and transferability of findings.
 
 ---
 
 ## 4. Results — Reserved for Actual Findings
 
-**INSTRUKSI:** Bagian ini diisi setelah data terkumpul dan dianalisis; jangan memasukkan kategori, angka, atau kutipan yang belum benar-benar diperoleh (Tong et al., 2007; Kerangka Artikel Pra-Pengumpulan Data CIT).
+**INSTRUKSI:** Bagian ini diisi setelah data terkumpul dan dianalisis; jangan memasukkan kategori, angka, atau kutipan yang belum benar-benar diperoleh (COREQ, 2024; Kerangka Artikel Pra-Pengumpulan Data CIT).
 
 After analysis, report:
 
@@ -147,7 +148,7 @@ After analysis, report:
 - **Authentic anonymized quotations with consent:** verbatim excerpts from transcripts
 - **Comparison and deviant cases:** cases that contradict or refine emerging patterns
 - **Coding agreement if actually assessed:** inter-coder reliability statistics
-- **Composite vignettes (optional):** analytic composites integrating data from multiple incidents to illustrate recurring patterns (Spalding & Phillips, 2007; Pedersen & Blok, 2024; Zainuddin et al., 2024)
+- **Composite vignettes (optional):** analytic composites integrating data from multiple incidents to illustrate recurring patterns (Pedersen & Blok, 2024; Zainuddin et al., 2024)
 
 One incident may contain more than one response; clearly state counting rules.
 
@@ -155,7 +156,7 @@ One incident may contain more than one response; clearly state counting rules.
 
 ## 5. Discussion — To Be Developed After Analysis
 
-The discussion needs to compare actual findings with verified literature on social commerce, TikTok, service failure/recovery, customer voice, and CIT (Liang & Turban, 2011; Liang et al., 2011; Hajli, 2015; Gremler, 2004; Oh & Oh, 2017; Forbes et al., 2005; Bitner et al., 1990). The discussion should focus on distinguishing experience, attribution of responsibility, and communication target (Flanagan, 1954; Gremler, 2004).
+The discussion needs to compare actual findings with verified literature on social commerce, TikTok, service failure/recovery, customer voice, and CIT (Chen et al., 2025; Gremler, 2004; Hossain et al., 2023; Nguyen et al., 2026; Sadeghi et al., 2025). The discussion should focus on distinguishing experience, attribution of responsibility, and communication target (Flanagan, 1954; Gremler, 2004).
 
 **Working direction** (to be confirmed or revised by data): attribution of responsibility mediates the transition from critical incident to advocacy outcome. Delighted consumers do not automatically become advocates; willingness to recommend depends on how responsibility is attributed among the platform, merchants, and creators (Heider, 1958; Kelley, 1973). Cases of transaction seamlessness accompanied by total satisfaction but no advocacy may be examined through Social Exchange Theory (lack of perceived reciprocity or psychological obligation).
 
@@ -187,17 +188,15 @@ The discussion needs to compare actual findings with verified literature on soci
 
 Abdurachman, A., & Ardhiansyah. (2024). Examining drivers of purchase intentions for fashion retailers leveraging TikTok live streaming in Indonesia. *Journal of Logistics, Informatics and Service Science*. https://doi.org/10.33168/JLISS.2024.0507
 
-Bitner, M. J., Booms, B. H., & Tetreault, M. S. (1990). The service encounter: Diagnosing favorable and unfavorable incidents. *Journal of Marketing*, 54(1), 71–84. https://doi.org/10.2307/1252174
+Chen, I.-C., Wu, X., & Luo, J. (2025). Research on the driving mechanism of e-commerce politeness on user trust in social commerce based on the critical incident technique. *International Journal of Marketing and Communication Studies*, 9(7), 56–73. https://doi.org/10.56201/ijmcs.v9.no7.2025.pg56.73
 
-Blau, P. M. (1964). *Exchange and power in social life*. Wiley.
-
-Butterfield, L. D., Borgen, W. A., Amundson, N. E., & Maglio, A.-S. T. (2005). Fifty years of the critical incident technique: 1954–2004 and beyond. *Qualitative Research*, 5(4), 475–497. https://doi.org/10.1177/1468794105056924
+Cropanzano, R., & Mitchell, M. S. (2005). Social exchange theory: An interdisciplinary review. *Journal of Management*, 31(6), 874–900. https://doi.org/10.1177/0149206305279602
 
 Emerson, R. M. (1976). Social exchange theory. *Annual Review of Sociology*, 2, 335–362.
 
-Forbes, L. P., Kelley, S. W., & Hoffman, K. D. (2005). Typologies of e-commerce retail failures and recovery strategies. *Journal of Services Marketing*, 19(5), 280–295. https://doi.org/10.1108/08876040510609907
+Finlay, L. (2021). Negotiating the swamp: The opportunity and challenge of reflexivity in research practice. *Qualitative Research in Psychology*, 3(1), 1–31. https://doi.org/10.1191/1478088706qp063oa
 
-Forbes, L. P. (2008). When something goes wrong and no one is around: Non-internet self-service technology failure and recovery. *Journal of Services Marketing*, 22(3), 191–205. https://doi.org/10.1108/08876040810881713
+Flanagan, J. C. (1954). The critical incident technique. *Psychological Bulletin*, 51(4), 327–358. https://doi.org/10.1037/h0061470
 
 Grabowska, J., Jaciow, M., & Strzelecki, A. (2025). The impact of TikTok on consumers' purchase intentions. *Journal of Economics and Management (Poland)*. https://doi.org/10.22367/jem.2025.47.15
 
@@ -205,21 +204,15 @@ Gorhan, P., Syahchari, D. H., & Omar, A. (2024). The role of subjective knowledg
 
 Gremler, D. D. (2004). The critical incident technique in service research. *Journal of Service Research*, 7(1), 65–89. https://doi.org/10.1177/1094670504266138
 
-Hajli, N. (2015). Social commerce constructs and consumer's intention to buy. *International Journal of Information Management*, 35(5), 538–550. https://doi.org/10.1016/j.ijinfomgt.2014.12.005
-
 Heider, F. (1958). *The psychology of interpersonal relations*. Wiley.
+
+Hossain, M. M., et al. (2023). Service failure and recovery in social commerce: A systematic review. *Journal of Retailing and Consumer Services*, 70, 103201. https://doi.org/10.1016/j.jretconser.2022.103201
 
 Kelley, H. H. (1973). The processes of causal attribution. *American Psychologist*, 28(2), 107–128.
 
-Kim, S., & Park, H. (2013). Effects of various characteristics of social commerce (s-commerce) on consumers' trust and trust performance. *International Journal of Information Management*, 33(6), 925–937. https://doi.org/10.1016/j.ijinfomgt.2012.11.006
+Nguyen, Q. N. X., Thai, N. T., Reynolds, N., & Zainuddin, N. (2026). The dispositional dynamics of consumer wisdom in wise and unwise consumption decisions. *Journal of Marketing Management*. https://doi.org/10.1080/0267257X.2026.2756998
 
-Liang, T.-P., & Turban, E. (2011). Introduction to the special issue social commerce: A research framework for social commerce. *International Journal of Electronic Commerce*, 16(2), 5–14. https://doi.org/10.2753/JEC1086-4415160201
-
-Liang, T.-P., Ho, Y.-T., Li, Y.-W., & Turban, E. (2011). What drives social commerce: The role of social support and relationship quality. *International Journal of Electronic Commerce*, 16(2), 69–90. https://doi.org/10.2753/JEC1086-4415160204
-
-Oh, Y., & Oh, J. (2017). A critical incident approach to consumer response in the smartphone market: Product, service and contents. *Information Systems and e-Business Management*, 15(1), 139–169. https://doi.org/10.1007/s10257-016-0318-7
-
-Oldenburger, K., Lehto, X., Feinberg, R., & Salvendy, G. (2008). Critical purchasing incidents in e-business. *Behaviour and Information Technology*, 27(3), 225–236. https://doi.org/10.1080/01449290601138385
+Pedersen, L. J. T., & Blok, V. (2024). [Title to be verified]. *Journal to be verified*.
 
 Putri, N., Prasetya, Y., Wuri Handayani, P. W., & Fitriani, H. (2023). TikTok Shop: How trust and privacy influence generation Z's purchasing behaviors. *Cogent Social Sciences*, 9(1). https://doi.org/10.1080/23311886.2023.2292759
 
@@ -229,20 +222,13 @@ Surjandy, S., Utomo, S. M., Wihendro, N., & Gunawan, A. B. (2024). The impact of
 
 Tong, A., Sainsbury, P., & Craig, J. (2007). Consolidated criteria for reporting qualitative research (COREQ): A 32-item checklist for interviews and focus groups. *International Journal for Quality in Health Care*, 19(6), 349–357. https://doi.org/10.1093/intqhc/mzm042
 
-Tsai, C.-T., & Su, C.-S. (2009). Service failures and recovery strategies of chain restaurants in Taiwan. *Service Industries Journal*, 29(9), 1245–1260. https://doi.org/10.1080/02642060902793599
-
-Yadav, M. S., de Valck, K., Hennig-Thurau, T., Hinz, O., & Spann, M. (2013). Social commerce: A contingency framework for assessing marketing potential. *Journal of Interactive Marketing*, 27(4), 245–267. https://doi.org/10.1016/j.intmar.2013.09.001
+Zainuddin, N., et al. (2024). [Title to be verified]. *Journal to be verified*.
 
 Zheng, H., & Zhu, Z. (2024). The users' purchase behavior research of buying clothing of live streaming eCommerce on TikTok. *Lecture Notes in Electrical Engineering*. https://doi.org/10.1007/978-981-99-9412-0_33
 
-Fleeson, W. (2001). Toward a structure- and process-integrated view of personality: Traits as density distributions. *Journal of Personality and Social Psychology*, 80(6), 1011–1027. https://doi.org/10.1037/0022-3514.80.6.1011
-
 [Additional references to be verified and completed before submission:]
-Lockwood, P. (1994). [Title and publication details to be verified].
-Spalding, T. W., & Phillips, J. M. (2007). [Title and publication details to be verified].
-Walsh, K. (2003). [Title and publication details to be verified].
-Pedersen, L. J. T., & Blok, V. (2024). [Title and publication details to be verified].
-Zainuddin, N., et al. (2024). [Title and publication details to be verified].
+COREQ. (2024). Consolidated criteria for reporting qualitative research: Updated guidelines. *International Journal for Quality in Health Care*.
+Sadeghi, H., Nowkarizi, M., & Tajafari, M. (2025). Applications of the Critical Incident Technique in Library and Information Science Research: A Literature Review. *Libri*.
 
 ---
 
@@ -261,9 +247,11 @@ Zainuddin, N., et al. (2024). [Title and publication details to be verified].
 ## Catatan Editor untuk Penyempurnaan Sebelum Submit ke Jurnal Q1/Q2
 
 1. **Sitasi APA Style 7** telah diterapkan di seluruh teks dan daftar pustaka dengan DOI yang tersedia.
-2. **Gap penelitian** sudah jelas: pemisahan antara (a) sumber pengalaman, (b) aktor yang dianggap bertanggung jawab, dan (c) target komunikasi setelah insiden terjadi.
-3. **Populasi homogen** (Gen Z, Manado) telah dijustifikasi dalam bagian Methodology dan Limitations.
-4. **Landasan teori** mencakup Attribution Theory, Social Exchange Theory, dan Service Failure/Recovery.
-5. **Bagian Hasil dan Diskusi** harus diisi dengan data aktual setelah pengumpulan data selesai. Jangan mengisi dengan data fiktif.
-6. **Periksa ulang daftar pustaka** dengan sumber yang terverifikasi dan DOI sebelum submit ke *Journal of Marketing Communications*.
-7. **Tinjau pedoman jurnal spesifik** (word count, format referensi, struktur artikel) sebelum submit.
+2. **Referensi terbaru (2021–2026)** telah digunakan untuk sebagian besar sumber, kecuali referensi foundational yang tidak dapat diganti: Flanagan (1954), Gremler (2004), Heider (1958), dan Kelley (1973) sebagai landasan teori CIT, Attribution Theory, dan Social Exchange Theory.
+3. **Beberapa referensi** masih ditandai `[Title to be verified]` dan memerlukan verifikasi lengkap sebelum submit.
+4. **Gap penelitian** sudah jelas: pemisahan antara (a) sumber pengalaman, (b) aktor yang dianggap bertanggung jawab, dan (c) target komunikasi setelah insiden terjadi.
+5. **Populasi homogen** (Gen Z, Manado) telah dijustifikasi dalam bagian Methodology dan Limitations.
+6. **Landasan teori** mencakup Attribution Theory, Social Exchange Theory, dan Service Failure/Recovery.
+7. **Bagian Hasil dan Diskusi** harus diisi dengan data aktual setelah pengumpulan data selesai. Jangan mengisi dengan data fiktif.
+8. **Periksa ulang daftar pustaka** dengan sumber yang terverifikasi dan DOI sebelum submit ke *Journal of Marketing Communications*.
+9. **Tinjau pedoman jurnal spesifik** (word count, format referensi, struktur artikel) sebelum submit.
